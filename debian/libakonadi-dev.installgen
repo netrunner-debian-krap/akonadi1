@@ -1,0 +1,2 @@
+dst:usr/include
+dst:usr/lib/.*\.so$

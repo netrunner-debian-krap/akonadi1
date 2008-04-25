@@ -13,5 +13,6 @@ akonadi (0.80.0-1) experimental; urgency=low
 
   * Patch FindQt4.cmake to make X11 optional.
   * Add myself to uploaders.
+  * Add installgen files.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 Apr 2008 16:12:57 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 Apr 2008 16:29:05 +0300
