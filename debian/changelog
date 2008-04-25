@@ -1,5 +1,12 @@
 akonadi (0.80.0-1) experimental; urgency=low
 
+  +++ Changes by Sune Vuorela:
+
+  * Initial packaging.
   * Split from unuploaded kdepim.
 
- -- Sune Vuorela <debian@pusling.com>  Wed, 23 Apr 2008 23:43:27 +0200
+  +++ Changes by Ana Beatriz Guerrero Lopez:
+  
+  * Rework descriptions and add Homepage field.
+
+ --  Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 Apr 2008 15:07:39 +0200

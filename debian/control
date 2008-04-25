@@ -22,28 +22,42 @@ Description: akonadi server libraries
  and has several other components including search, and a library (cache) 
  for easy access and notification of data changes.
  .
- This package contains the server libraries for the akonadi personal information 
- management framework.
+ This package contains the server libraries for the Akonadi Personal Information 
+ Management framework.
 
 Package: libakonadi-dbg
 Section: libdevel
 Architecture: any
 Depends: libakonadi0 (= ${binary:Version})
-Description: debugging symbols for akonadi server libraries
- This package contains detached debugging symbols for akonadi server libraries.
+Description: debugging symbols for Akonadi server libraries
+ Akonadi is a PIM, Personal Information Management, framework.
+ Akonadi will function as an extensible data storage for all PIM applications,
+ and has several other components including search, and a library (cache) 
+ for easy access and notification of data changes.
+ .
+ This package contains detached debugging symbols for Akonadi server libraries.
 
 Package: libakonadi-dev
 Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libakonadi0 (= ${binary:Version})
-Description: development files for akonadi server libraries
- This package contains development headers for akonadi server libraries.
+Description: development files for Akonadi server libraries
+ Akonadi is a PIM, Personal Information Management, framework.
+ Akonadi will function as an extensible data storage for all PIM applications,
+ and has several other components including search, and a library (cache) 
+ for easy access and notification of data changes.
+ .
+ This package contains development headers for Akonadi server libraries.
 
 Package: akonadi-server
 Section: mail
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: akonadi server binaries
- This package contains akonadi server binaries, like akonadictl and akonadi_control
+ Akonadi is a PIM, Personal Information Management, framework.
+ Akonadi will function as an extensible data storage for all PIM applications,
+ and has several other components including search, and a library (cache) 
+ for easy access and notification of data changes.
  .
- this package also contains the dbus related files.
+ This package contains Akonadi server binaries, like akonadictl and
+ akonadi_control, and the dbus related files.
