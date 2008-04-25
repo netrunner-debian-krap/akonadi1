@@ -4,3 +4,5 @@ usr/include/akonadi/private/akonadiprotocolinternals_export.h
 usr/include/akonadi/private/imapset_p.h
 usr/include/akonadi/private/imapparser_p.h
 usr/include/akonadi/private/notificationmessage_p.h
+usr/lib/libakonadiprivate.so
+usr/lib/libakonadiprotocolinternals.so
