@@ -1,3 +1,6 @@
+# Install dbus XMLs to libakonadi-dev first
+depends libakonadi-dev
+
 dst:usr/bin
 dst:etc/
 dst:usr/share
