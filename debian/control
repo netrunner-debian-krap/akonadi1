@@ -11,53 +11,49 @@ Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/branches/kde4/packages/akonadi
 Vcs-Svn: svn://svn.debian.org/pkg-kde/branches/kde4/packages/akonadi
 Homepage: http://pim.kde.org/akonadi
 
-Package: libakonadi0
+Package: libakonadiprivate0
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: akonadi-server
-Description: akonadi server libraries
- Akonadi is a PIM, Personal Information Management, framework.
- Akonadi will function as an extensible data storage for all PIM applications,
- and has several other components including search, and a library (cache) 
- for easy access and notification of data changes.
+Description: libraries for the Akonadi PIM storage service
+ Akonadi is an extensible cross-desktop Personal Information Management (PIM)
+ storage service.  It provides a common framework for applications to store and
+ access mail, calendars, addressbooks, and other PIM data.
  .
- This package contains the server libraries for the Akonadi Personal Information 
- Management framework.
+ This package contains private libraries used by the Akonadi PIM storage service.
 
-Package: libakonadi-dbg
+Package: akonadi-dbg
 Section: libdevel
 Architecture: any
-Depends: libakonadi0 (= ${binary:Version})
-Description: debugging symbols for Akonadi server libraries
- Akonadi is a PIM, Personal Information Management, framework.
- Akonadi will function as an extensible data storage for all PIM applications,
- and has several other components including search, and a library (cache) 
- for easy access and notification of data changes.
+Suggests: akonadi-server (= ${binary:Version})
+Description: debugging symbols for the Akonadi PIM storage service
+ Akonadi is an extensible cross-desktop Personal Information Management (PIM)
+ storage service.  It provides a common framework for applications to store and
+ access mail, calendars, addressbooks, and other PIM data.
  .
- This package contains detached debugging symbols for Akonadi server libraries.
+ This package contains debugging files used to investigate problems with
+ the Akonadi PIM storage service.
 
-Package: libakonadi-dev
+Package: akonadi-dev
 Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libakonadi0 (= ${binary:Version})
-Description: development files for Akonadi server libraries
- Akonadi is a PIM, Personal Information Management, framework.
- Akonadi will function as an extensible data storage for all PIM applications,
- and has several other components including search, and a library (cache) 
- for easy access and notification of data changes.
+Depends: ${shlibs:Depends}, ${misc:Depends}, libakonadiprivate0 (= ${binary:Version})
+Description: development files for the Akonadi PIM storage service
+ Akonadi is an extensible cross-desktop Personal Information Management (PIM)
+ storage service.  It provides a common framework for applications to store and
+ access mail, calendars, addressbooks, and other PIM data.
  .
- This package contains development headers for Akonadi server libraries.
+ This package contains development files for building software that uses the
+ Akonadi PIM storage service.
 
 Package: akonadi-server
-Section: mail
+Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: akonadi server binaries
- Akonadi is a PIM, Personal Information Management, framework.
- Akonadi will function as an extensible data storage for all PIM applications,
- and has several other components including search, and a library (cache) 
- for easy access and notification of data changes.
+Description: Akonadi PIM storage service
+ Akonadi is an extensible cross-desktop Personal Information Management (PIM)
+ storage service.  It provides a common framework for applications to store and
+ access mail, calendars, addressbooks, and other PIM data.
  .
- This package contains Akonadi server binaries, like akonadictl and
- akonadi_control, and the dbus related files.
+ This package contains the Akonadi PIM storage server and associated programs.
