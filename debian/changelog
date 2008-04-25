@@ -9,4 +9,9 @@ akonadi (0.80.0-1) experimental; urgency=low
   
   * Rework descriptions and add Homepage field.
 
- --  Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 Apr 2008 15:07:39 +0200
+  +++ Changes by Modestas Vainius:
+
+  * Patch FindQt4.cmake to make X11 optional.
+  * Add myself to uploaders.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 Apr 2008 16:12:57 +0300
