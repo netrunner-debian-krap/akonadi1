@@ -9,6 +9,7 @@ Build-Depends: cdbs (>= 0.4.51), debhelper (>= 5), cmake (2.6.0~), quilt,
 Standards-Version: 3.7.3
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/branches/kde4/packages/akonadi
 Vcs-Svn: svn://svn.debian.org/pkg-kde/branches/kde4/packages/akonadi
+Homepage: http://pim.kde.org/akonadi
 
 Package: libakonadi0
 Section: libs
@@ -16,28 +17,33 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: akonadi-server
 Description: akonadi server libraries
- this package contains the server libraries fro the akonadi personal information 
- management framework
+ Akonadi is a PIM, Personal Information Management, framework.
+ Akonadi will function as an extensible data storage for all PIM applications,
+ and has several other components including search, and a library (cache) 
+ for easy access and notification of data changes.
+ .
+ This package contains the server libraries for the akonadi personal information 
+ management framework.
 
 Package: libakonadi-dbg
 Section: libdevel
 Architecture: any
 Depends: libakonadi0 (= ${binary:Version})
 Description: debugging symbols for akonadi server libraries
- this package contains detached debugging symbols for akonadi server libraries
+ This package contains detached debugging symbols for akonadi server libraries.
 
 Package: libakonadi-dev
 Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libakonadi0 (= ${binary:Version})
 Description: development files for akonadi server libraries
- this package contains development headers for akonadi server libraries
+ This package contains development headers for akonadi server libraries.
 
 Package: akonadi-server
 Section: mail
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: akonadi server binaries
- this package contains akonadi server binaries, like akonadictl and akonadi_control
+ This package contains akonadi server binaries, like akonadictl and akonadi_control
  .
  this package also contains the dbus related files.
