@@ -1,0 +1,43 @@
+Source: akonadi
+Section: libs
+Priority: extra
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Sune Vuorela <debian@pusling.com>
+Build-Depends: cdbs (>= 0.4.51), debhelper (>= 5), cmake, quilt, 
+ libqt4-dev (>> 4.4.0~rc1), shared-mime-info, libmysqlclient15-dev,
+ libxslt-dev, libsoprano-dev, xsltproc, libdbus-1-dev
+Standards-Version: 3.7.3
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/branches/kde4/packages/akonadi
+Vcs-Svn: svn://svn.debian.org/pkg-kde/branches/kde4/packages/akonadi
+
+Package: libakonadi0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: akonadi-server
+Description: akonadi server libraries
+ this package contains the server libraries fro the akonadi personal information 
+ management framework
+
+Package: libakonadi-dbg
+Section: libdevel
+Architecture: any
+Depends: libakonadi0 (= ${binary:Version})
+Description: debugging symbols for akonadi server libraries
+ this package contains detached debugging symbols for akonadi server libraries
+
+Package: libakonadi-dev
+Section: libdevel
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libakonadi0 (= ${binary:Version})
+Description: development files for akonadi server libraries
+ this package contains development headers for akonadi server libraries
+
+Package: akonadi-server
+Section: mail
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: akonadi server binaries
+ this package contains akonadi server binaries, like akonadictl and akonadi_control
+ .
+ this package also contains the dbus related files.

@@ -1,0 +1,4 @@
+#!/usr/bin/make -f
+DEB_CONFIG_INSTALL_DIR = /etc
+
+include debian/cdbs/kde.mk

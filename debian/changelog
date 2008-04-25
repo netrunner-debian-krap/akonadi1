@@ -1,0 +1,5 @@
+akonadi (0.80.0) experimental; urgency=low
+
+  * Split from unuploaded kdepim.
+
+ -- Sune Vuorela <debian@pusling.com>  Wed, 23 Apr 2008 23:43:27 +0200

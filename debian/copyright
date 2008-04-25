@@ -1,0 +1,75 @@
+This package was debianized by Sune Vuorela <debian@pusling.com> on
+Fri,  24 april 2008 09:49:34 +0200.
+
+It was downloaded from http://akonadi.omat.nl
+
+Copyright:
+
+ Copyright (C) 1991, 1999 Free Software Foundation, Inc.
+ Copyright (C) 2000 Timo Hummel <timo.hummel@sap.com>
+ Copyright (C) 2006 by Andreas Gungl <a.gungl@gmx.de>
+ Copyright (C) 2006 by Ingo Kloecker <kloecker@kde.org>
+ Copyright (C) 2006 by Till Adam <adam@kde.org>
+ Copyright (C) 2006-2008 by Tobias Koenig <tokoe@kde.org>
+ Copyright (C) 2006-2007 David Faure <faure@kde.org>
+ Copyright (C) 2007 Matthias Kretz <kretz@kde.org>
+ Copyright (C) 2007 Christian Schaarschmidt <schaarsc@gmx.de>
+ Copyright (C) 2007-2008 by Kevin Krammer <kevin.krammer@gmx.at>
+ Copyright (C) 2007 by Robert Zwerus <arzie@dds.nl>
+ Copyright (c) 2002 Kitware, Inc., Insight Consortium. All rights reserved.
+ Copyright (c) 2006-2008 Volker Krause <vkrause@kde.org>
+ Copyright (c) 2006, 2007, Alexander Neundorf, <neundorf@kde.org>
+ Copyright (c) 2006, 2007, Laurent Montel, <montel@kde.org>
+ Copyright (c) 2006, Allen Winter, <winter@kde.org>
+ Copyright (c) 2007, Pino Toscano, <toscano.pino@tiscali.it>
+ Copyright (c) 2007, Will Stephenson <wstephenson@kde.org>
+
+
+
+
+Upstream authors:
+
+    
+	Main Authors:
+	- Volker Krause <vkrause@kde.org>
+	- Till Adam <adam@kde.org>
+	- Tobias Koenig <tokoe@kde.org>
+	- Kevin Krammer <kevin.krammer@gmx.at>
+
+	Contributors:
+	- Alexander Neundorf <neundorf@kde.org>
+	- Allen Winter <winter@kde.org>
+	- Andreas Gungl <a.gungl@gmx.de>
+	- Christian Schaarschmidt <schaarsc@gmx.de>
+	- David Faure, <faure@kde.org>
+	- Ingo Kloecker <kloecker@kde.org>
+	- Kitware, Inc., Insight Consortium.
+	- Laurent Montel <montel@kde.org>
+	- Matthias Kretz <kretz@kde.org>
+	- Pino Toscano, <toscano.pino@tiscali.it>
+	- Robert Zwerus <arzie@dds.nl>
+	- Robert Zwerus <arzie@dds.nl>
+	- Timo Hummel <timo.hummel@sap.com>
+	- Will Stephenson <wstephenson@kde.org>
+
+License:
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Library General Public
+    License as published by the Free Software Foundation; either
+    version 2 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Library General Public License for more details.
+
+    You should have received a copy of the GNU Library General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA  02110-1301 USA
+
+On Debian systems, the complete text of the GNU Library General
+Public License can be found in `/usr/share/common-licenses/LGPL-2'.
+
+The Debian packaging is © 2007, Debian Qt/KDE Maintainers and
+is licensed under the same license as the software, LGPL-2, see above.
