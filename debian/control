@@ -35,7 +35,7 @@ Description: debugging symbols for the Akonadi PIM storage service
  This package contains debugging files used to investigate problems with
  the Akonadi PIM storage service.
 
-Package: akonadi-dev
+Package: libakonadi-dev
 Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libakonadiprivate0 (= ${binary:Version})
