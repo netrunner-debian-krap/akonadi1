@@ -21,7 +21,8 @@ Description: libraries for the Akonadi PIM storage service
  storage service.  It provides a common framework for applications to store and
  access mail, calendars, addressbooks, and other PIM data.
  .
- This package contains private libraries used by the Akonadi PIM storage service.
+ This package contains private libraries used by the Akonadi PIM storage 
+ service.
 
 Package: akonadi-dbg
 Section: libdevel
