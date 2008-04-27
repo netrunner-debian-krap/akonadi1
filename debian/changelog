@@ -1,3 +1,17 @@
+akonadi (0.80.0+svn801397-1~pre1) UNRELEASED; urgency=low
+
+  !!! TODO: figure out what to do with mysql-server-5.0 dependency !!!
+
+  * New upstream development snapshot:
+    - The latest upstream commit is r801397 by winterz
+    - Date: Sun, 27 Apr 2008 12:04:12 -0000
+
+  +++ Changes by Modestas Vainius:
+
+  * Build depend on automoc.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 27 Apr 2008 15:05:26 +0300
+
 akonadi (0.80.0-1) experimental; urgency=low
 
   +++ Changes by Sune Vuorela:
