@@ -10,7 +10,12 @@ akonadi (0.80.0+svn801397-1~pre1) UNRELEASED; urgency=low
 
   * Build depend on automoc.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 27 Apr 2008 15:05:26 +0300
+  +++ Changes by Armin Berres:
+
+  * Add replaces to libakonadi-dev, to make it possible to install it before
+    upgrading kdepimlibs.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 28 Apr 2008 11:26:36 +0200
 
 akonadi (0.80.0-1) experimental; urgency=low
 
