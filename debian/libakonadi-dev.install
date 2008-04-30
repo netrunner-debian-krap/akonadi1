@@ -6,6 +6,7 @@ usr/include/akonadi/private/protocol_p.h
 usr/include/akonadi/private/xdgbasedirs_p.h
 usr/lib/libakonadiprivate.so
 usr/lib/libakonadiprotocolinternals.so
+usr/lib/pkgconfig/akonadi.pc
 usr/share/dbus-1/interfaces/org.kde.Akonadi.Agent.Control.xml
 usr/share/dbus-1/interfaces/org.kde.Akonadi.Agent.Status.xml
 usr/share/dbus-1/interfaces/org.kde.Akonadi.AgentManager.xml

@@ -1,3 +1,4 @@
 dst:usr/include
 dst:usr/lib/.*\.so$
 dst:usr/share/dbus.*/interfaces/.*\.xml$
+dst:.*\.pc$

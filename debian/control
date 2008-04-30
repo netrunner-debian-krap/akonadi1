@@ -41,6 +41,7 @@ Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libakonadiprivate0 (= ${binary:Version})
 Replaces: kdepimlibs-data (<= 4:4.0.68+svn794641-1), kdepimlibs5-dev (<= 4:4.0.68+svn794641-1)
+Suggests: pkg-config
 Description: development files for the Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
  storage service.  It provides a common framework for applications to store and
