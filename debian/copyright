@@ -81,7 +81,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-The rest is:
+The rest is according to the file lgpl-license:
   
 License:
 
@@ -100,7 +100,7 @@ License:
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA  02110-1301 USA
 
 On Debian systems, the complete text of the GNU Library General
-Public License can be found in `/usr/share/common-licenses/LGPL-2'.
+Public License can be found in `/usr/share/common-licenses/LGPL-2-1'.
 
 The Debian packaging is © 2008, Debian Qt/KDE Maintainers and
-is licensed under the same license as the software, LGPL-2, see above.
+is licensed under the same license as the software, LGPL-2-1, see above.
