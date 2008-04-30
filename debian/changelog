@@ -6,9 +6,7 @@ akonadi (0.80.0+svn802602-1) experimental; urgency=low
 
   +++ Changes by Sune Vuorela
 
-  * Add useless extra bytes to the packaging. Before the change: Everything
-    effectively LGPL. After the change: Everything effectively LGPL. Wonder
-    when there is time to fix real issues.
+  * Update debian/copyright.
 
   +++ Changes by Modestas Vainius:
 

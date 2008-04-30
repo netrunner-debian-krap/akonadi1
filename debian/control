@@ -2,7 +2,8 @@ Source: akonadi
 Section: libs
 Priority: extra
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Sune Vuorela <debian@pusling.com>, Modestas Vainius <modestas@vainius.eu>
+Uploaders: Sune Vuorela <debian@pusling.com>, Modestas Vainius <modestas@vainius.eu>,
+ Ana Beatriz Guerrero Lopez <ana@debian.org>
 Build-Depends: cdbs (>= 0.4.51), debhelper (>= 5), cmake (>= 2.6.0~), automoc, quilt,
  libqt4-dev (>> 4.4.0~), shared-mime-info, libmysqlclient15-dev,
  libxslt-dev, libsoprano-dev (>= 2.0.98), xsltproc, libdbus-1-dev
