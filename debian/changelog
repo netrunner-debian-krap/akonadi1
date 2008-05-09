@@ -1,8 +1,11 @@
-akonadi (0.80.0+svn804326-1~pre1) UNRELEASED; urgency=low
+akonadi (0.80.0+svn804999-1) experimental; urgency=low
 
   * New upstream development snapshot:
-    - The latest upstream commit is r804326 by chehrlic
-    - Date: Mon, 05 May 2008 18:08:27 -0000
+    - The latest upstream commit is r804999 by mlaurent
+    - Date: Wed May 7 10:59:48 2008 UTC
+
+  +++ Changes by Modestas Vainius:
+
   * Corrections to *.install files:
     - libakonadi-dev.install: 12 new file(s) added; 12 file(s) removed;
     - akonadi-server.install: 1 new file(s) added; 1 file(s) removed;
