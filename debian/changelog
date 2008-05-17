@@ -1,4 +1,4 @@
-akonadi (0.80.0+svn807399-1) UNRELEASED; urgency=low
+akonadi (0.80.0+svn807399-1) experimental; urgency=low
 
   * New upstream development snapshot:
     - The latest upstream commit is r807399 by qbast
