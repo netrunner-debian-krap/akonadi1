@@ -1,3 +1,9 @@
+akonadi (0.81.0+svn814221-1) UNRELEASED; urgency=low
+
+  * New upstream development snapshot.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 03 Jun 2008 20:10:37 +0200
+
 akonadi (0.81.0-1) experimental; urgency=low
 
   * New upstream snapshot.
