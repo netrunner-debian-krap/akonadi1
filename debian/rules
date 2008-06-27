@@ -1,4 +1,7 @@
 #!/usr/bin/make -f
 DEB_CONFIG_INSTALL_DIR = /etc
+DEB_DH_MAKESHLIBS_ARGS_libakonadiprivate0 := -V'libakonadiprivate0 (>= 0.82)'
 
 include debian/cdbs/kde.mk
+
+

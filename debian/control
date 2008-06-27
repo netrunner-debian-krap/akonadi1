@@ -17,6 +17,7 @@ Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: akonadi-server
+Conflicts: kdepimlibs5 (<< 4:4.0.84)
 Description: libraries for the Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
  storage service.  It provides a common framework for applications to store and
