@@ -1,4 +1,4 @@
-akonadi (0.82.0-1) experimental; urgency=low
+akonadi (0.82.0-1) unstable; urgency=low
 
   * New upstream snapshot.
   * Protocol changed in akonadi, add appropriate conflicts.
