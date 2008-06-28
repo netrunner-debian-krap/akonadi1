@@ -1,8 +1,8 @@
 akonadi (0.82.0-1) experimental; urgency=low
 
-  * New upstream snapshot
-  * Protocol change in akonadi. approprate conflicts.
-  * Hardcode mysqld path.
+  * New upstream snapshot.
+  * Protocol changed in akonadi, add appropriate conflicts.
+  * Hardcode mysqld path in debian/rules.
 
  -- Sune Vuorela <debian@pusling.com>  Fri, 27 Jun 2008 19:30:34 +0200
 
