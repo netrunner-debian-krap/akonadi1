@@ -7,8 +7,10 @@ akonadi (1.0.0-0r1) UNRELEASED; urgency=low
   * Update debian/copyright: download URL and copyright/license check.
   * libakonadiprivate SONAME was changed to 1. Rename library package, update
     debian/libakonadiprivate* files, update control and rules.
+  * Make akonadi-server depend on mysql-server.
+  * libakonadiprivate suggests akonadi-server instead of Recommends.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 23 Jul 2008 20:00:45 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 23 Jul 2008 20:27:52 +0300
 
 akonadi (0.82.0-1) unstable; urgency=low
 
