@@ -9,8 +9,9 @@ akonadi (1.0.80+svn889987-0r1) UNRELEASED; urgency=low
   * Switch to new installgen format.
   * Update install files:
     - libakonadi-dev.install: 1 new file(s) added;
+  * Bump shlibs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 28 Nov 2008 14:09:51 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 28 Nov 2008 14:11:06 +0200
 
 akonadi (1.0.0-2) unstable; urgency=low
 
