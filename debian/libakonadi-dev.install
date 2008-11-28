@@ -11,6 +11,7 @@ usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Agent.Control.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Agent.Status.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.AgentManager.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.ControlManager.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.DebugInterface.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.NotificationManager.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Resource.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Search.xml
