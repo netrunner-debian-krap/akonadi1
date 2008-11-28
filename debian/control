@@ -55,7 +55,7 @@ Description: development files for the Akonadi PIM storage service
 Package: akonadi-server
 Section: net
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, mysql-server
+Depends: ${shlibs:Depends}, ${misc:Depends}, mysql-server, libqt4-sql-mysql
 Description: Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
  storage service.  It provides a common framework for applications to store and
