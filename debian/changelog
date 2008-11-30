@@ -8,7 +8,6 @@ akonadi (1.0.80+svn889987-0r5) UNRELEASED; urgency=low
   * Build depend on libboost-dev.
   * Switch to new installgen format.
   * Update install files:
-    - libakonadi-dev.install: 1 new file(s) added;
   * Bump shlibs.
   * Make akonadi-server depend on libqt4-sql-mysql.
   * Add 02_hardcode_debian_mysqld_path.diff patch to hardcode MySQLd
