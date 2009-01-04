@@ -1,11 +1,11 @@
-akonadi (1.0.81+svn900813-0r1) UNRELEASED; urgency=low
+akonadi (1.1.0-0r1) UNRELEASED; urgency=low
 
   * New upstream development snapshot.
 
   +++ Changes by Modestas Vainius:
 
   * Bump Standards-Version to 3.8.0: add README.source.
-  * Build depend on libboost-dev.
+  * Build depend on libboost-program-options-dev.
   * Bump cmake build depend to 2.6.2.
   * Switch to new installgen format.
   * Update install files:
@@ -14,7 +14,7 @@ akonadi (1.0.81+svn900813-0r1) UNRELEASED; urgency=low
   * Add 02_hardcode_debian_mysqld_path.diff patch to hardcode MySQLd
     path instread of depending on mysql-server at build time.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 27 Dec 2008 21:21:48 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 04 Jan 2009 22:41:46 +0200
 
 akonadi (1.0.0-2) unstable; urgency=low
 
