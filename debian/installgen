@@ -10,4 +10,4 @@ dst:etc/
 dst:usr/share
 
 [libakonadiprivate1]
-dst:usr/lib/.*\.so\.
+dst:usr/lib/lib[^/]+\.so\.1($|\.)
