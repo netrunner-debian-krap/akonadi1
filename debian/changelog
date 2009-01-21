@@ -1,4 +1,4 @@
-akonadi (1.1.0-0r1) UNRELEASED; urgency=low
+akonadi (1.1.1-0r1) UNRELEASED; urgency=low
 
   * New upstream release.
 
@@ -14,7 +14,7 @@ akonadi (1.1.0-0r1) UNRELEASED; urgency=low
   * Add 02_hardcode_debian_mysqld_path.diff patch to hardcode MySQLd
     path instread of depending on mysql-server at build time.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 04 Jan 2009 22:41:46 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 21 Jan 2009 20:54:13 +0200
 
 akonadi (1.0.0-2) unstable; urgency=low
 
