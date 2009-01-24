@@ -13,8 +13,9 @@ akonadi (1.1.1-0r1) UNRELEASED; urgency=low
   * Make akonadi-server depend on libqt4-sql-mysql.
   * Add 02_hardcode_debian_mysqld_path.diff patch to hardcode MySQLd
     path instread of depending on mysql-server at build time.
+  * Rename debian/*.lintian to debian/*.lintian-overrides.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 21 Jan 2009 20:54:13 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 24 Jan 2009 03:06:27 +0200
 
 akonadi (1.0.0-2) unstable; urgency=low
 
