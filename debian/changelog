@@ -1,4 +1,4 @@
-akonadi (1.1.1-0r1) UNRELEASED; urgency=low
+akonadi (1.1.1-1) experimental; urgency=low
 
   * New upstream release.
 
@@ -8,16 +8,20 @@ akonadi (1.1.1-0r1) UNRELEASED; urgency=low
   * Build depend on libboost-program-options-dev.
   * Bump cmake build depend to 2.6.2.
   * Switch to new installgen format.
-  * Update install files:
+  * Update install files.
   * Bump shlibs.
   * Make akonadi-server depend on libqt4-sql-mysql.
   * Add 02_hardcode_debian_mysqld_path.diff patch to hardcode MySQLd
     path instread of depending on mysql-server at build time.
-  * Rename debian/*.lintian to debian/*.lintian-overrides.
   * Bump debian/compat and debhelper build dependency to v7 (to get more
     sophisticated debian/tmp handling).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 24 Jan 2009 03:42:56 +0200
+  +++ Changes by Ana Beatriz Guerrero Lopez:
+
+  * Remove no longer needed lintian override.
+  * Updating packaging copyright years.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 24 Jan 2009 13:37:05 +0100
 
 akonadi (1.0.0-2) unstable; urgency=low
 
