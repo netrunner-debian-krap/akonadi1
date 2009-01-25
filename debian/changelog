@@ -1,3 +1,15 @@
+akonadi (1.1.1-2~pre1) UNRELEASED; urgency=low
+
+  +++ Changes by Modestas Vainius:
+
+  * Switch from internal debian/cdbs/kde.mk to pkg-kde-tools:
+    - build depend on pkg-kde-tools 0.4;
+    - remove debian/cdbs directory;
+    - replace debian/cdbs/kde.mk with
+      /usr/share/pkg-kde-tools/qt-kde-team/1/debian-qt-kde.mk in debian/rules.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 24 Jan 2009 13:37:05 +0100
+
 akonadi (1.1.1-1) experimental; urgency=low
 
   * New upstream release.
