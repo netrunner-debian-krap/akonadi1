@@ -1,4 +1,4 @@
-akonadi (1.1.1-2~pre1) UNRELEASED; urgency=low
+akonadi (1.1.1-2) unstable; urgency=low
 
   +++ Changes by Modestas Vainius:
 
@@ -9,7 +9,7 @@ akonadi (1.1.1-2~pre1) UNRELEASED; urgency=low
       /usr/share/pkg-kde-tools/qt-kde-team/1/debian-qt-kde.mk in debian/rules.
   * Remove THIS_SHOULD_GO_TO_UNSTABLE from debian/rules.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 16 Feb 2009 02:10:24 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 18 Feb 2009 23:19:08 +0100
 
 akonadi (1.1.1-1) experimental; urgency=low
 
