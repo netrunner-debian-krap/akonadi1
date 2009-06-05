@@ -1,12 +1,10 @@
 --- a/server/CMakeLists.txt
 +++ b/server/CMakeLists.txt
-@@ -12,7 +12,8 @@ if(COMMAND cmake_policy)
-    cmake_policy(SET CMP0003 NEW)
- endif(COMMAND cmake_policy)
+@@ -1,5 +1,6 @@
  
--find_program( MYSQLD_EXECUTABLE mysqld /usr/sbin /usr/local/sbin /usr/libexec /opt/mysql/libexec )
+-find_program( MYSQLD_EXECUTABLE mysqld /usr/sbin /usr/local/sbin /usr/libexec /usr/local/libexec /opt/mysql/libexec )
 +# MySQLd can be found here on Debian systems
 +set( MYSQLD_EXECUTABLE "/usr/sbin/mysqld" CACHE STRING "MySQL Server path" )
- macro_log_feature( MYSQLD_EXECUTABLE "MySQL Server" "Database server" "http://www.mysql.com" FALSE ""
-                    "Akonadi server requires the mysqld binary" )
- 
+ if( MYSQLD_EXECUTABLE)
+    message( STATUS "MySQL Server found." )
+ else ( MYSQLD_EXECUTABLE )

@@ -4,6 +4,8 @@ usr/include/akonadi/private/imapset_p.h
 usr/include/akonadi/private/notificationmessage_p.h
 usr/include/akonadi/private/protocol_p.h
 usr/include/akonadi/private/xdgbasedirs_p.h
+usr/lib/cmake/Akonadi/AkonadiConfig.cmake
+usr/lib/cmake/Akonadi/AkonadiConfigVersion.cmake
 usr/lib/libakonadiprivate.so
 usr/lib/libakonadiprotocolinternals.so
 usr/lib/pkgconfig/akonadi.pc
