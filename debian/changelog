@@ -1,4 +1,4 @@
-akonadi (1.1.90+svn977248-0r1) UNRELEASED; urgency=low
+akonadi (1.1.95+svn986123-0r1) UNRELEASED; urgency=low
 
   * New upstream snapshot.
 
@@ -7,7 +7,7 @@ akonadi (1.1.90+svn977248-0r1) UNRELEASED; urgency=low
   * Refresh patches.
   * Update installed files.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 05 Jun 2009 12:25:42 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 25 Jun 2009 13:23:43 +0300
 
 akonadi (1.1.2-1) unstable; urgency=low
 
