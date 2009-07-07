@@ -7,6 +7,12 @@ akonadi (1.1.95-0r1) UNRELEASED; urgency=low
   * Refresh patches.
   * Update installed files.
 
+  +++ Changes by Sune Vuorela:
+
+  * Add lintian override for broken lintian checks in -dbg package
+    dependencies.
+  * Bump Standards-Version to 3.8.2. No changes needed.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 26 Jun 2009 19:25:36 +0300
 
 akonadi (1.1.2-1) unstable; urgency=low
