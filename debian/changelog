@@ -1,6 +1,6 @@
-akonadi (1.1.95-0r1) UNRELEASED; urgency=low
+akonadi (1.1.95-1) experimental; urgency=low
 
-  * New upstream snapshot.
+  * New upstream prerelease.
 
   +++ Changes by George Kiagiadakis:
 
