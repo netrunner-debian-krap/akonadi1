@@ -41,7 +41,7 @@ Description: debugging symbols for the Akonadi PIM storage service
 Package: libakonadi-dev
 Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libakonadiprivate1 (= ${binary:Version})
+Depends: ${shlibs:Depends}, ${misc:Depends}, libakonadiprivate1 (= ${binary:Version}), libboost-dev
 Replaces: kdepimlibs-data (<= 4:4.0.68+svn794641-1), kdepimlibs5-dev (<= 4:4.0.68+svn794641-1)
 Suggests: pkg-config
 Description: development files for the Akonadi PIM storage service

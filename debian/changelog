@@ -1,3 +1,10 @@
+akonadi (1.1.95-2) experimental; urgency=low
+
+  * Make akonadi-dev depend on boost-dev, as several akonadi headers includes
+    boost headers.
+
+ -- Sune Vuorela <debian@pusling.com>  Sat, 11 Jul 2009 23:51:48 +0200
+
 akonadi (1.1.95-1) experimental; urgency=low
 
   * New upstream prerelease.
