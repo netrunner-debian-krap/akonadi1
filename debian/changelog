@@ -1,3 +1,9 @@
+akonadi (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Tue, 04 Aug 2009 09:07:49 +0200
+
 akonadi (1.1.95-2) experimental; urgency=low
 
   * Make akonadi-dev depend on boost-dev, as several akonadi headers includes
