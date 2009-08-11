@@ -1,3 +1,13 @@
+akonadi (1.2.0-2) UNRELEASED; urgency=low
+
+  +++ Changes by Modestas Vainius:
+
+  * Build depend on libmysqlclient-dev rather than libmysqlclient15-dev.
+    Backports friendly as libmysqlclient-dev is a virtual package in lenny.
+    (Closes: #541024).
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 11 Aug 2009 12:58:10 +0300
+
 akonadi (1.2.0-1) unstable; urgency=low
 
   * New upstream release.
