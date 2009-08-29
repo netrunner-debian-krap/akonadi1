@@ -7,7 +7,7 @@ Uploaders: Sune Vuorela <debian@pusling.com>, Modestas Vainius <modestas@vainius
 Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7), cmake (>= 2.6.2), automoc, quilt, pkg-kde-tools (>= 0.4),
  libqt4-dev (>> 4.4.0~), shared-mime-info, libmysqlclient-dev,
  libxslt-dev, libsoprano-dev (>= 2.1.1), xsltproc, libdbus-1-dev, libboost-program-options-dev
-Standards-Version: 3.8.2
+Standards-Version: 3.8.3
 Homepage: http://pim.kde.org/akonadi
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/akonadi
 Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/akonadi
