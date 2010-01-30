@@ -2,10 +2,10 @@ akonadi (1.3.0-1) UNRELEASED; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
-
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 30 Jan 2010 19:23:32 -0300
-
-akonadi (1.2.1-2) UNRELEASED; urgency=low
+  * Refreshed patches to apply cleanly:
+    - 01_x11_not_required.diff
+    - 02_hardcode_debian_mysqld_path.diff
+  * Removed some freedesktop dbus interfaces no longer installed by libakonadi-dev.
 
   [ Martin Alfke ]
   * Make libakonadiprivate1 depend on akonadi-server 
