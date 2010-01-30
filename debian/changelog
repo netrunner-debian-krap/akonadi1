@@ -1,4 +1,4 @@
-akonadi (1.3.0-1) UNRELEASED; urgency=low
+akonadi (1.3.0-1~pre0) UNRELEASED; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
@@ -18,7 +18,7 @@ akonadi (1.3.0-1) UNRELEASED; urgency=low
   * Change my email address to modax@debian.org in Uploaders field.
   * Fix Vcs-Browser URL.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 13 Nov 2009 15:07:31 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 31 Jan 2010 01:10:47 +0100
 
 akonadi (1.2.1-1) unstable; urgency=low
 
