@@ -13,6 +13,7 @@ akonadi (1.3.0-1~pre0) UNRELEASED; urgency=low
 
   [ Ana Beatriz Guerrero Lopez ]
   * Remove myself from Uploaders.
+  * Update year on packaging copyright.
 
   [ Modestas Vainius ]
   * Change my email address to modax@debian.org in Uploaders field.
