@@ -1,14 +1,16 @@
-akonadi (1.3.0-1~pre1) UNRELEASED; urgency=low
+akonadi (1.3.1-1~pre1) UNRELEASED; urgency=low
+
+  * New upstream release.
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
-  * Refreshed patches to apply cleanly:
+  * Refresh patches to apply cleanly:
     - 01_x11_not_required.diff
     - 02_hardcode_debian_mysqld_path.diff
-  * Fixed the list of dbus interfaces files installed by libakonadi-dev.
+  * Fix the list of dbus interfaces files installed by libakonadi-dev.
 
   [ Martin Alfke ]
-  * Make libakonadiprivate1 depend on akonadi-server 
+  * Make libakonadiprivate1 depend on akonadi-server
     binary version (Closes: #544431)
 
   [ Ana Beatriz Guerrero Lopez ]
