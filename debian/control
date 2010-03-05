@@ -30,6 +30,7 @@ Package: akonadi-dbg
 Section: debug
 Architecture: any
 Depends: ${misc:Depends}
+Suggests: akonadi-server (= ${binary:Version})
 Description: debugging symbols for the Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
  storage service.  It provides a common framework for applications to store and
