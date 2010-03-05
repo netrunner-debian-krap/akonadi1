@@ -1,3 +1,15 @@
+akonadi (1.3.1-2) unstable; urgency=low
+
+  [ Modestas Vainius ]
+  * Bump libakonadiprivate1 shlibs with each new upstream release.
+  * Generate strict local shlibs for libakonadiprivate1: use
+    library-packages.mk from pkg-kde-tools 0.6.4.
+  * Add ${misc:Depends} to akonadi-dbg Depends.
+  * Add 03_disable_usr_lib_install_rpath.diff patch in order to get rid of
+    /usr/lib RPATH.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 06 Mar 2010 01:51:56 +0200
+
 akonadi (1.3.1-1) unstable; urgency=low
 
   * New upstream release.

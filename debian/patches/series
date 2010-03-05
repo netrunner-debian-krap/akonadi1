@@ -1,2 +1,3 @@
 01_x11_not_required.diff
 02_hardcode_debian_mysqld_path.diff
+03_disable_usr_lib_install_rpath.diff
