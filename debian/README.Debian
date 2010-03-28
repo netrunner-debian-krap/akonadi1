@@ -1,0 +1,17 @@
+Selecting Akonadi storage backend
+---------------------------------
+
+Akonadi has support for multiple backends for its cache and index storage. At
+the moment, the following backends are supported:
+
+* MySQL backend (default). Support for this backend is provided by the
+  akonadi-mysql package. The backend either starts MySQL Server instance with
+  privilegies of the user that started akonadiserver (no manual configuration
+  needed) or alternatively requires access to an already running MySQL server
+  (manual configuration required in akonadiserverrc). In order to use this
+  backend, set the value of the General/Driver option to QMYSQL in
+  ~/.config/akonadi/akonadiserverrc.
+
+* SQLite backend. Support for this backend is provided by the akonadi-sqlite
+  package. In order to use it, you will also need to set the value of the
+  General/Driver option to QSQLITE3 in ~/.config/akonadi/akonadiserverrc.
