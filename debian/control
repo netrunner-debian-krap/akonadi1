@@ -45,7 +45,7 @@ Package: akonadi-server
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
- akonadi-mysql (= ${binary:Version}) | akonadi-sqlite (= ${binary:Version})
+ akonadi-mysql (= ${source:Version}) | akonadi-sqlite (= ${binary:Version})
 Suggests: akonadi-mysql (= ${binary:Version}), akonadi-sqlite (= ${binary:Version})
 Description: Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
