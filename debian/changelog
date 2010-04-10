@@ -1,9 +1,10 @@
-akonadi (1.3.1-3) UNRELEASED; urgency=low
+akonadi (1.3.1-3) unstable; urgency=low
 
+  [ Didier Raboud ]
   * Make akonadi-mysql depend on mysql-server-core instead of mysql-server,
     thanks to the split made in mysql-5.1. (Closes: #513382) 
 
- -- Didier Raboud <didier@raboud.com>  Wed, 07 Apr 2010 15:23:04 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 11 Apr 2010 01:46:38 +0300
 
 akonadi (1.3.1-2) unstable; urgency=low
 
