@@ -4,7 +4,7 @@ Priority: extra
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Sune Vuorela <debian@pusling.com>, Modestas Vainius <modax@debian.org>,
  Fathi Boudra <fabo@debian.org>
-Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7), cmake (>= 2.6.2), automoc, quilt, pkg-kde-tools (>= 0.6.4),
+Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7), cmake (>= 2.6.2), automoc, pkg-kde-tools (>= 0.9),
  libqt4-dev (>= 4:4.6.0), shared-mime-info, libmysqlclient-dev,
  libxslt-dev, libsoprano-dev (>= 2.1.1), xsltproc, libdbus-1-dev, libboost-program-options-dev,
  libsqlite3-dev

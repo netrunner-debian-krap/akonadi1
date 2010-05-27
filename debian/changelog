@@ -1,10 +1,8 @@
-akonadi (1.3.60~svn1129091-0r1) UNRELEASED; urgency=low
+akonadi (1.3.80-0r1) UNRELEASED; urgency=low
+
+  * New upstream development release.
 
   [ Modestas Vainius ]
-  * New upstream development snapshost:
-    - Last Changed Author: mwolff
-    - Last Changed Rev: 1129091
-    - Last Changed Date: 2010-05-21 13:17:10 +0300
   * Add libsqlite3-dev to build depends. This build has support for SQLite
     backend.
   * Drop 03_disable_usr_lib_install_rpath.diff patch, no longer needed as
@@ -24,6 +22,10 @@ akonadi (1.3.60~svn1129091-0r1) UNRELEASED; urgency=low
   * Add NEWS and README.Debian about SQLite (and MySQL) backends.
   * Bump build dependency to libqt4-dev 4:4.6.0. SQLite backend needs it.
   * Drop Replaces from libakonadi-dev for very old pre-4.1 KDE versions.
+  * Switch to quilt 3.0 format:
+    - add appropriate debian/source/format;
+    - remove quilt from Build-Depends;
+    - build-depends on pkg-kde-tools (>= 0.9) for 3.0 support;
 
  -- Modestas Vainius <modax@debian.org>  Mon, 29 Mar 2010 00:37:56 +0300
 
