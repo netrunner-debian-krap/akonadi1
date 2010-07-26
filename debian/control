@@ -9,8 +9,8 @@ Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7), cmake (>= 2.6.2), automoc, qu
  libxslt-dev, libsoprano-dev (>= 2.1.1), xsltproc, libdbus-1-dev, libboost-program-options-dev
 Standards-Version: 3.8.4
 Homepage: http://pim.kde.org/akonadi
-Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/akonadi/#_trunk_packages_akonadi_
-Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/akonadi
+Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-req/akonadi.git
+Vcs-Git: git://git.debian.org/pkg-kde/kde-req/akonadi.git
 
 Package: libakonadiprivate1
 Section: libs
