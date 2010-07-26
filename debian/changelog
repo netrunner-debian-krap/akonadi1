@@ -2,7 +2,7 @@ akonadi (1.3.1-3) unstable; urgency=low
 
   [ Didier Raboud ]
   * Make akonadi-mysql depend on mysql-server-core instead of mysql-server,
-    thanks to the split made in mysql-5.1. (Closes: #513382) 
+    thanks to the split made in mysql-5.1. (Closes: #513382)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 11 Apr 2010 01:46:38 +0300
 
@@ -239,7 +239,7 @@ akonadi (0.80.0-1) experimental; urgency=low
   * Split from unuploaded kdepim.
 
   +++ Changes by Ana Beatriz Guerrero Lopez:
-  
+
   * Rework descriptions and add Homepage field.
 
   +++ Changes by Modestas Vainius:
