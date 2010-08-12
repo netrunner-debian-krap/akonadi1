@@ -8,7 +8,7 @@ Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7), cmake (>= 2.6.2), automoc, pk
  libqt4-dev (>= 4:4.6.0), shared-mime-info, libmysqlclient-dev,
  libxslt-dev, libsoprano-dev (>= 2.1.1), xsltproc, libdbus-1-dev, libboost-program-options-dev,
  libsqlite3-dev
-Standards-Version: 3.8.4
+Standards-Version: 3.9.1
 Homepage: http://pim.kde.org/akonadi
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/akonadi/#_trunk_packages_akonadi_
 Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/akonadi
@@ -17,7 +17,7 @@ Package: libakonadiprivate1
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: akonadi-server (= ${binary:Version})
-Conflicts: kdepimlibs5 (<< 4:4.0.84)
+Breaks: kdepimlibs5 (<< 4:4.0.84)
 Description: libraries for the Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
  storage service.  It provides a common framework for applications to store and
@@ -60,6 +60,7 @@ Architecture: all
 Depends: ${misc:Depends}, mysql-server-core, libqt4-sql-mysql
 Suggests: akonadi-server
 Replaces: akonadi-server (<< 1.3.60~)
+Breaks: akonadi-server (<< 1.3.60~)
 Description: Akonadi MySQL storage backend
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
  storage service. It provides a common framework for applications to store and
@@ -92,6 +93,7 @@ Architecture: all
 Depends: ${misc:Depends}, libqt4-sql-psql
 Suggests: akonadi-server
 Replaces: akonadi-server (<< 1.3.60~)
+Breaks: akonadi-server (<< 1.3.60~)
 Description: Akonadi PostgreSQL storage backend
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
  storage service. It provides a common framework for applications to store and
