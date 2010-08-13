@@ -29,6 +29,7 @@ akonadi (1.4.0-0r1) UNRELEASED; urgency=low
   * Bump Standards-Versiont to 3.9.1: add Breaks next to Replaces where needed
     or replace Conflicts with Breaks respectively,
   * Improve passing of MYSQLD_EXECUTABLE flag to cmake.
+  * Drop 02_hardcode_debian_mysqld_path.diff, not needed any more.
 
  -- Modestas Vainius <modax@debian.org>  Fri, 13 Aug 2010 02:45:37 +0300
 
