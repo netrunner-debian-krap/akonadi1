@@ -1,4 +1,3 @@
-etc/akonadi/mysql-global-mobile.conf
 usr/bin/akonadi_control
 usr/bin/akonadi_rds
 usr/bin/akonadictl
