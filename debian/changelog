@@ -28,6 +28,7 @@ akonadi (1.4.0-0r1) UNRELEASED; urgency=low
     - build-depends on pkg-kde-tools (>= 0.9) for 3.0 support;
   * Bump Standards-Versiont to 3.9.1: add Breaks next to Replaces where needed
     or replace Conflicts with Breaks respectively,
+  * Improve passing of MYSQLD_EXECUTABLE flag to cmake.
 
  -- Modestas Vainius <modax@debian.org>  Fri, 13 Aug 2010 02:45:37 +0300
 
