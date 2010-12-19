@@ -1,3 +1,7 @@
+From: Modestas Vainius <modax@debian.org>
+Subject: make X11 optional in FindQt4
+Forwarded: no
+
 --- a/cmake/modules/FindQt4.cmake
 +++ b/cmake/modules/FindQt4.cmake
 @@ -1342,7 +1342,7 @@ IF (QT4_QMAKE_FOUND)

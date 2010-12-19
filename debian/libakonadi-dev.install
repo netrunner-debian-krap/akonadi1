@@ -11,13 +11,13 @@ usr/lib/libakonadiprivate.so
 usr/lib/libakonadiprotocolinternals.so
 usr/lib/pkgconfig/akonadi.pc
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Agent.Control.xml
-usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.AgentManager.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Agent.Status.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.AgentManager.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.ControlManager.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.DebugInterface.xml
-usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Preprocessor.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.NotificationManager.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Preprocessor.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Resource.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Server.xml
-usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.TracerNotification.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Tracer.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.TracerNotification.xml

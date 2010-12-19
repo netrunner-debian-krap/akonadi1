@@ -4,20 +4,20 @@ Priority: extra
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Sune Vuorela <debian@pusling.com>, Modestas Vainius <modax@debian.org>,
  Fathi Boudra <fabo@debian.org>
-Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7), cmake (>= 2.6.2), automoc, quilt, pkg-kde-tools (>= 0.6.4),
- libqt4-dev (>> 4.4.0~), shared-mime-info, libmysqlclient-dev,
- libxslt-dev, libsoprano-dev (>= 2.1.1), xsltproc, libdbus-1-dev, libboost-program-options-dev
-Standards-Version: 3.8.4
+Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7), cmake (>= 2.6.2), automoc, pkg-kde-tools (>= 0.9),
+ libqt4-dev (>= 4:4.6.0), shared-mime-info, libmysqlclient-dev,
+ libxslt-dev, libsoprano-dev (>= 2.1.1), xsltproc, libdbus-1-dev, libboost-program-options-dev,
+ libsqlite3-dev
+Standards-Version: 3.9.1
 Homepage: http://pim.kde.org/akonadi
 Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-req/akonadi.git
 Vcs-Git: git://git.debian.org/pkg-kde/kde-req/akonadi.git
 
 Package: libakonadiprivate1
-Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: akonadi-server (= ${binary:Version})
-Conflicts: kdepimlibs5 (<< 4:4.0.84)
+Breaks: kdepimlibs5 (<< 4:4.0.84)
 Description: libraries for the Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
  storage service.  It provides a common framework for applications to store and
@@ -25,6 +25,82 @@ Description: libraries for the Akonadi PIM storage service
  .
  This package contains private libraries used by the Akonadi PIM storage 
  service.
+
+Package: libakonadi-dev
+Section: libdevel
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libakonadiprivate1 (= ${binary:Version}), libboost-dev
+Suggests: pkg-config
+Description: development files for the Akonadi PIM storage service
+ Akonadi is an extensible cross-desktop Personal Information Management (PIM)
+ storage service.  It provides a common framework for applications to store and
+ access mail, calendars, addressbooks, and other PIM data.
+ .
+ This package contains development files for building software that uses the
+ Akonadi PIM storage service.
+
+Package: akonadi-server
+Section: net
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ akonadi-backend-mysql (= ${source:Version}) | akonadi-backend-sqlite (= ${binary:Version}) |
+ akonadi-backend-pgsql (= ${source:Version})
+Suggests: akonadi-backend-mysql (= ${binary:Version}), akonadi-backend-sqlite (= ${binary:Version}),
+ akonadi-backend-pgsql (= ${source:Version})
+Description: Akonadi PIM storage service
+ Akonadi is an extensible cross-desktop Personal Information Management (PIM)
+ storage service.  It provides a common framework for applications to store and
+ access mail, calendars, addressbooks, and other PIM data.
+ .
+ This package contains the Akonadi PIM storage server and associated programs.
+
+Package: akonadi-backend-mysql
+Section: misc
+Architecture: all
+Depends: ${misc:Depends}, mysql-server-core, libqt4-sql-mysql
+Suggests: akonadi-server
+Replaces: akonadi-server (<< 1.3.60~)
+Breaks: akonadi-server (<< 1.3.60~)
+Description: Akonadi MySQL storage backend
+ Akonadi is an extensible cross-desktop Personal Information Management (PIM)
+ storage service. It provides a common framework for applications to store and
+ access mail, calendars, addressbooks, and other PIM data.
+ .
+ This metapackage pulls in all required dependencies (including the MySQL server
+ executable) to be able to use Akonadi with MySQL as a cache storage engine. A
+ local MySQL server instance will be started for each user by default. However,
+ only libqt4-sql-mysql package is needed to use Akonadi with external MySQL
+ server instance.
+
+Package: akonadi-backend-sqlite
+Section: misc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: akonadi-server
+Description: Akonadi SQLite storage backend
+ Akonadi is an extensible cross-desktop Personal Information Management (PIM)
+ storage service.  It provides a common framework for applications to store and
+ access mail, calendars, addressbooks, and other PIM data.
+ .
+ This package contains advanced SQLite 3 module for Qt 4. It is primarily
+ intended to be used by akonadi-server as SQLite backend but it should also
+ be usable by other applications which implement database access via standard
+ Qt SQL framework.
+
+Package: akonadi-backend-pqsql
+Section: misc
+Architecture: all
+Depends: ${misc:Depends}, libqt4-sql-psql
+Suggests: akonadi-server
+Replaces: akonadi-server (<< 1.3.60~)
+Breaks: akonadi-server (<< 1.3.60~)
+Description: Akonadi PostgreSQL storage backend
+ Akonadi is an extensible cross-desktop Personal Information Management (PIM)
+ storage service. It provides a common framework for applications to store and
+ access mail, calendars, addressbooks, and other PIM data.
+ .
+ This metapackage pulls in all required dependencies to use Akonadi with
+ external PostgreSQL server instance as a cache storage engine.
 
 Package: akonadi-dbg
 Section: debug
@@ -38,29 +114,3 @@ Description: debugging symbols for the Akonadi PIM storage service
  .
  This package contains debugging files used to investigate problems with
  the Akonadi PIM storage service.
-
-Package: libakonadi-dev
-Section: libdevel
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libakonadiprivate1 (= ${binary:Version}), libboost-dev
-Replaces: kdepimlibs-data (<= 4:4.0.68+svn794641-1), kdepimlibs5-dev (<= 4:4.0.68+svn794641-1)
-Suggests: pkg-config
-Description: development files for the Akonadi PIM storage service
- Akonadi is an extensible cross-desktop Personal Information Management (PIM)
- storage service.  It provides a common framework for applications to store and
- access mail, calendars, addressbooks, and other PIM data.
- .
- This package contains development files for building software that uses the
- Akonadi PIM storage service.
-
-Package: akonadi-server
-Section: net
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, mysql-server-core, libqt4-sql-mysql
-Description: Akonadi PIM storage service
- Akonadi is an extensible cross-desktop Personal Information Management (PIM)
- storage service.  It provides a common framework for applications to store and
- access mail, calendars, addressbooks, and other PIM data.
- .
- This package contains the Akonadi PIM storage server and associated programs.
- It pulls in all required dependencies including the MySQL server executable.
