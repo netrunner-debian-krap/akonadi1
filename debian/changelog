@@ -26,7 +26,7 @@ akonadi (1.4.90-0r2) UNRELEASED; urgency=low
     - add appropriate debian/source/format;
     - remove quilt from Build-Depends;
     - build-depends on pkg-kde-tools (>= 0.9) for 3.0 support;
-  * Bump Standards-Versiont to 3.9.1: add Breaks next to Replaces where needed
+  * Bump Standards-Version to 3.9.1: add Breaks next to Replaces where needed
     or replace Conflicts with Breaks respectively,
   * Improve passing of MYSQLD_EXECUTABLE flag to cmake.
   * Drop 02_hardcode_debian_mysqld_path.diff, not needed any more.
