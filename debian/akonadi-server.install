@@ -1,3 +1,5 @@
+usr/bin/akonadi_agent_launcher
+usr/bin/akonadi_agent_server
 usr/bin/akonadi_control
 usr/bin/akonadi_rds
 usr/bin/akonadictl
