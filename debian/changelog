@@ -35,6 +35,8 @@ akonadi (1.4.90-0r1) UNRELEASED; urgency=low
 
   [ José Manuel Santamaría Lema ]
   * Remove 02_sanitize_sqlite_version_check.diff, no longer needed.
+  * Rename libakonadiprivate1 as libakonadiprotocolinternals1 
+    (libakonadiprivate.so.1* doesn't exist anymore) and create symbols file.
 
  -- Modestas Vainius <modax@debian.org>  Fri, 13 Aug 2010 14:50:52 +0300
 
