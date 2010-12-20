@@ -31,11 +31,8 @@ akonadi (1.4.90-0r1) UNRELEASED; urgency=low
     or replace Conflicts with Breaks respectively,
   * Improve passing of MYSQLD_EXECUTABLE flag to cmake.
   * Drop 02_hardcode_debian_mysqld_path.diff, not needed any more.
-  * Add 02_sanitize_sqlite_version_check.diff patch to make akonadi QSQLite
-    driver work when it was compiled against SQLite 3.7.0 or later.
 
   [ José Manuel Santamaría Lema ]
-  * Remove 02_sanitize_sqlite_version_check.diff, no longer needed.
   * Rename libakonadiprivate1 as libakonadiprotocolinternals1 
     (libakonadiprivate.so.1* doesn't exist anymore) and create symbols file.
 
