@@ -12,10 +12,13 @@ akonadi (1.4.90-0r1) UNRELEASED; urgency=low
     - akonadi-backend-mysql - a package which depends on the stuff needed for
       MySQL backend (server and Qt module) and installs a configuration file
       previously present in akonadi-server;
+    - akonadi-backend-postgresql - a package which depends on the stuff needed
+      for PostgreSQL backend. Even if default configuration starts an internal
+      PostgreSQL server instance, add postgresql package to Recommends because
+      the latter package enables the daemon system-wide. PostgreSQL needs to be
+      split to the -core part as MySQL was;
     - akonadi-backend-sqlite - a package with improved SQLite driver that is
       needed for Akonadi SQLite backend;
-    - akonadi-backend-pgsql - a package which depends on the stuff needed for
-      PostgreSQL backend.
   * Make akonadi-server on both backends with | relation preferring MySQL for
     now. Also suggest both backends.
   * Move akonadi-dbg to the end of debian/control.

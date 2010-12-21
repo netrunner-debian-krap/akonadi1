@@ -45,9 +45,9 @@ Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
  akonadi-backend-mysql (= ${source:Version}) | akonadi-backend-sqlite (= ${binary:Version}) |
- akonadi-backend-pgsql (= ${source:Version})
+ akonadi-backend-postgresql (= ${source:Version})
 Suggests: akonadi-backend-mysql (= ${binary:Version}), akonadi-backend-sqlite (= ${binary:Version}),
- akonadi-backend-pgsql (= ${source:Version})
+ akonadi-backend-postgresql (= ${source:Version})
 Description: Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
  storage service. It provides a common framework for applications to store and
@@ -72,11 +72,11 @@ Description: MySQL storage backend for Akonadi
  will be started for each user. Alternatively, connection to an external MySQL
  database is supported as well.
 
-Package: akonadi-backend-pqsql
+Package: akonadi-backend-postgresql
 Section: misc
 Architecture: all
 Depends: ${misc:Depends}, libqt4-sql-psql
-Recommends: akonadi-server
+Recommends: akonadi-server, postgresql
 Replaces: akonadi-server (<< 1.3.60~)
 Breaks: akonadi-server (<< 1.3.60~)
 Description: PostgreSQL storage backend for Akonadi
