@@ -17,6 +17,9 @@ akonadi (1.4.90-0r1) UNRELEASED; urgency=low
       PostgreSQL server instance, add postgresql package to Recommends because
       the latter package enables the daemon system-wide. PostgreSQL needs to be
       split to the -core part as MySQL was;
+    - akonadi-backend-odbc - a package which depends on the stuff needed to
+      enable Akonadi ODBC backend. It's primarily intended to be used with a
+      local Virtuoso instance that's started by Nepomuk;
     - akonadi-backend-sqlite - a package with improved SQLite driver that is
       needed for Akonadi SQLite backend;
   * Make akonadi-server on both backends with | relation preferring MySQL for
