@@ -26,7 +26,7 @@ akonadi (1.4.90-0r1) UNRELEASED; urgency=low
     now. Also suggest both backends.
   * Move akonadi-dbg to the end of debian/control.
   * Update install files.
-  * Add NEWS and README.Debian about SQLite (and MySQL) backends.
+  * Add README.Debian about SQLite (and MySQL) backends.
   * Bump build dependency to libqt4-dev 4:4.6.0. SQLite backend needs it.
   * Drop Replaces from libakonadi-dev for very old pre-4.1 KDE versions.
   * Switch to quilt 3.0 format:

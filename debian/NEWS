@@ -1,9 +1,0 @@
-akonadi (1.4.0-1) experimental; urgency=low
-
-  Akonadi gained support for SQLite backend. In order to use it, install
-  akonadi-sqlite package and change General/Driver value to QSQLITE3 in your
-  ~/.config/akonadi/akonadiserverrc. Please consult
-  /usr/share/doc/akonadi-server/README.Debian for more information.
-
- -- Modestas Vainius <modax@debian.org>  Fri, 13 Aug 2010 02:56:12 +0300
-
