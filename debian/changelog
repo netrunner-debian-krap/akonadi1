@@ -31,6 +31,7 @@ akonadi (1.4.90-0r1) UNRELEASED; urgency=low
     or replace Conflicts with Breaks respectively,
   * Improve passing of MYSQLD_EXECUTABLE flag to cmake.
   * Drop 02_hardcode_debian_mysqld_path.diff, not needed any more.
+  * Drop obsolete (pre-KDE 4.1) Breaks.
 
   [ José Manuel Santamaría Lema ]
   * Rename libakonadiprivate1 as libakonadiprotocolinternals1 
