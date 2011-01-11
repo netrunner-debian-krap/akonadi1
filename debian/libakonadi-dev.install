@@ -7,6 +7,8 @@ usr/include/akonadi/private/protocol_p.h
 usr/include/akonadi/private/xdgbasedirs_p.h
 usr/lib/cmake/Akonadi/AkonadiConfig.cmake
 usr/lib/cmake/Akonadi/AkonadiConfigVersion.cmake
+usr/lib/cmake/Akonadi/AkonadiTargetsWithPrefix-debian.cmake
+usr/lib/cmake/Akonadi/AkonadiTargetsWithPrefix.cmake
 usr/lib/libakonadiprotocolinternals.so
 usr/lib/pkgconfig/akonadi.pc
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Agent.Control.xml
