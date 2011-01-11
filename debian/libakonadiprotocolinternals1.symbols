@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 1.4.90 amd64
+# SymbolsHelper-Confirmed: 1.4.95 amd64
 libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  (optional=templinst)_Z19qDBusMarshallHelperI5QListIN7Akonadi19NotificationMessageEEEvR13QDBusArgumentPKT_@Base 1.4.90
  (optional=templinst)_Z19qDBusMarshallHelperIN7Akonadi19NotificationMessageEEvR13QDBusArgumentPKT_@Base 1.4.90
@@ -9,6 +9,7 @@ libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  (optional=templinst)_Z24qMetaTypeConstructHelperI5QListIN7Akonadi19NotificationMessageEEEPvPKT_@Base 1.4.90
  (optional=templinst)_Z24qMetaTypeConstructHelperIN7Akonadi19NotificationMessageEEPvPKT_@Base 1.4.90
  _Z5qHashRKN7Akonadi19NotificationMessageE@Base 1.4.90
+ _ZGVZ13qvariant_castI8QVariantET_RKS0_E3vid@Base 1.4.95
  _ZN10QByteArrayD1Ev@Base 1.4.90
  _ZN11QStringListD1Ev@Base 1.4.90
  (optional=templinst)_ZN15QVarLengthArrayI10QByteArrayLi16EE7reallocEii@Base 1.4.90
@@ -20,25 +21,29 @@ libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  (optional=templinst)_ZN5QHashI10QByteArray15QHashDummyValueE11deleteNode2EPN9QHashData4NodeE@Base 1.4.90
  (optional=templinst)_ZN5QHashI10QByteArray15QHashDummyValueE13detach_helperEv@Base 1.4.90
  (optional=templinst)_ZN5QHashI10QByteArray15QHashDummyValueE13duplicateNodeEPN9QHashData4NodeEPv@Base 1.4.90
- (optional=templinst)_ZN5QListI10QByteArrayE13detach_helperEi@Base 1.4.90
+#MISSING: 1.4.95# (optional=templinst)_ZN5QListI10QByteArrayE13detach_helperEi@Base 1.4.90
+ (optional=templinst)_ZN5QListI10QByteArrayE13detach_helperEv@Base 1.4.95
  (optional=templinst)_ZN5QListI10QByteArrayE4freeEPN9QListData4DataE@Base 1.4.90
  (optional=templinst)_ZN5QListI10QByteArrayE6appendERKS0_@Base 1.4.90
  (optional=templinst)_ZN5QListI10QByteArrayED1Ev@Base 1.4.90
- (optional=templinst)_ZN5QListI7QStringE13detach_helperEi@Base 1.4.90
+#MISSING: 1.4.95# (optional=templinst)_ZN5QListI7QStringE13detach_helperEi@Base 1.4.90
+ (optional=templinst)_ZN5QListI7QStringE13detach_helperEv@Base 1.4.95
  (optional=templinst)_ZN5QListI7QStringE4freeEPN9QListData4DataE@Base 1.4.90
  (optional=templinst)_ZN5QListI7QStringE6appendERKS0_@Base 1.4.90
- (optional=templinst)_ZN5QListI7QStringEaSERKS1_@Base 1.4.90
+#MISSING: 1.4.95# (optional=templinst)_ZN5QListI7QStringEaSERKS1_@Base 1.4.90
  (optional=templinst)_ZN5QListI7QStringEpLERKS1_@Base 1.4.90
- (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEE13detach_helperEi@Base 1.4.90
+#MISSING: 1.4.95# (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEE13detach_helperEi@Base 1.4.90
+ (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEE13detach_helperEv@Base 1.4.95
  (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEE4freeEPN9QListData4DataE@Base 1.4.90
  (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEE6appendERKS1_@Base 1.4.90
  (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEED1Ev@Base 1.4.90
- (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE13detach_helperEi@Base 1.4.90
+#MISSING: 1.4.95# (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE13detach_helperEi@Base 1.4.90
+ (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE13detach_helperEv@Base 1.4.95
  (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE4freeEPN9QListData4DataE@Base 1.4.90
  (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE6appendERKS1_@Base 1.4.90
  (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEED1Ev@Base 1.4.90
  _ZN6QDebugD1Ev@Base 1.4.90
- _ZN6QDebuglsEPKc@Base 1.4.90
+#MISSING: 1.4.95# _ZN6QDebuglsEPKc@Base 1.4.90
  _ZN7Akonadi10ImapParser10parseBlockERK10QByteArray@Base 1.4.90
  _ZN7Akonadi10ImapParser11parseNumberERK10QByteArrayRxPbi@Base 1.4.90
  _ZN7Akonadi10ImapParser11parseStringERK10QByteArrayR7QStringi@Base 1.4.90
@@ -122,7 +127,7 @@ libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  (optional=templinst)_ZN7QVectorIxE7reallocEii@Base 1.4.90
  (optional=templinst)_ZN7QVectorIxED1Ev@Base 1.4.90
  _ZNK10QByteArrayixEi@Base 1.4.90
- (optional=templinst)_ZNK4QSetI10QByteArrayE6toListEv@Base 1.4.90
+#MISSING: 1.4.95# (optional=templinst)_ZNK4QSetI10QByteArrayE6toListEv@Base 1.4.90
  (optional=templinst)_ZNK5QHashI10QByteArray15QHashDummyValueE8findNodeERKS0_Pj@Base 1.4.90
  (optional=templinst)_ZNK5QListIxE8toVectorEv@Base 1.4.90
  _ZNK7Akonadi10ImapParser16continuationSizeEv@Base 1.4.90
