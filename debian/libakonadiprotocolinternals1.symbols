@@ -9,7 +9,6 @@ libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  (optional=templinst)_Z24qMetaTypeConstructHelperI5QListIN7Akonadi19NotificationMessageEEEPvPKT_@Base 1.4.90
  (optional=templinst)_Z24qMetaTypeConstructHelperIN7Akonadi19NotificationMessageEEPvPKT_@Base 1.4.90
  _Z5qHashRKN7Akonadi19NotificationMessageE@Base 1.4.90
-#MISSING: 1.5.0# _ZGVZ13qvariant_castI8QVariantET_RKS0_E3vid@Base 1.4.95
  _ZN10QByteArrayD1Ev@Base 1.4.90
  _ZN11QStringListD1Ev@Base 1.4.90
  (optional=templinst)_ZN15QVarLengthArrayI10QByteArrayLi16EE7reallocEii@Base 1.4.90
@@ -22,23 +21,19 @@ libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  (optional=templinst)_ZN5QHashI10QByteArray15QHashDummyValueE13detach_helperEv@Base 1.4.90
  (optional=templinst)_ZN5QHashI10QByteArray15QHashDummyValueE13duplicateNodeEPN9QHashData4NodeEPv@Base 1.4.90
  (optional=templinst)_ZN5QListI10QByteArrayE13detach_helperEi@Base 1.5.0
-#MISSING: 1.5.0# (optional=templinst)_ZN5QListI10QByteArrayE13detach_helperEv@Base 1.4.95
  (optional=templinst)_ZN5QListI10QByteArrayE4freeEPN9QListData4DataE@Base 1.4.90
  (optional=templinst)_ZN5QListI10QByteArrayE6appendERKS0_@Base 1.4.90
  (optional=templinst)_ZN5QListI10QByteArrayED1Ev@Base 1.4.90
  (optional=templinst)_ZN5QListI7QStringE13detach_helperEi@Base 1.5.0
-#MISSING: 1.5.0# (optional=templinst)_ZN5QListI7QStringE13detach_helperEv@Base 1.4.95
  (optional=templinst)_ZN5QListI7QStringE4freeEPN9QListData4DataE@Base 1.4.90
  (optional=templinst)_ZN5QListI7QStringE6appendERKS0_@Base 1.4.90
  (optional=templinst)_ZN5QListI7QStringEaSERKS1_@Base 1.5.0
  (optional=templinst)_ZN5QListI7QStringEpLERKS1_@Base 1.4.90
  (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEE13detach_helperEi@Base 1.5.0
-#MISSING: 1.5.0# (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEE13detach_helperEv@Base 1.4.95
  (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEE4freeEPN9QListData4DataE@Base 1.4.90
  (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEE6appendERKS1_@Base 1.4.90
  (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEED1Ev@Base 1.4.90
  (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE13detach_helperEi@Base 1.5.0
-#MISSING: 1.5.0# (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE13detach_helperEv@Base 1.4.95
  (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE4freeEPN9QListData4DataE@Base 1.4.90
  (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE6appendERKS1_@Base 1.4.90
  (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEED1Ev@Base 1.4.90
