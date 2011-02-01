@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 DEB_CONFIG_INSTALL_DIR = /etc
-DEB_DH_MAKESHLIBS_ARGS_libakonadiprivate1 := -V
+DEB_DH_MAKESHLIBS_ARGS_ALL := -V -u-c0
 
 DEB_CMAKE_EXTRA_FLAGS += -DMYSQLD_EXECUTABLE:STRING=/usr/sbin/mysqld
 
