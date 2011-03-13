@@ -45,6 +45,7 @@ akonadi (1.5.1-0r1) UNRELEASED; urgency=low
   * Install README.Debian to akonadi-server and all backend packages.
   * Install README.sqlite to akonadi-backend-sqlite.
   * Drop ${shlibs:Depends} from libakonadi-dev Depends.
+  * Update debian/copyright.
 
   [ José Manuel Santamaría Lema ]
   * Rename libakonadiprivate1 as libakonadiprotocolinternals1 
