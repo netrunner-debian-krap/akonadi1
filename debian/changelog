@@ -42,6 +42,7 @@ akonadi (1.5.0-0r1) UNRELEASED; urgency=low
   * Switch debian/rules engine to qt-kde-team/2/*. Fix FTBFS in the process.
     (Closes: #618200)
   * Strip sequence numbers from debian/patches/*.
+  * Install README.Debian to akonadi-server and all backend packages.
 
   [ José Manuel Santamaría Lema ]
   * Rename libakonadiprivate1 as libakonadiprotocolinternals1 

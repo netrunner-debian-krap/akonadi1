@@ -4,9 +4,16 @@ include /usr/share/pkg-kde-tools/qt-kde-team/2/debian-qt-kde.mk
 libpkgs_gen_strict_local_shlibs = $(libpkgs_all_packages)
 include /usr/share/pkg-kde-tools/qt-kde-team/2/library-packages.mk
 
+backend_packages = $(filter akonadi-backend-%,$(shell dh_listpackages))
+
 override_dh_auto_configure:
 	$(overriden_command) -- -DMYSQLD_EXECUTABLE:STRING=/usr/sbin/mysqld \
 	    -DCONFIG_INSTALL_DIR=/etc
+
+override_dh_installdocs:
+	# Install README.Debian to backend packages
+	$(overriden_command) -A -pakonadi-server $(foreach p,$(backend_packages),-p$(p)) debian/README.Debian
+	$(overriden_command) --remaining-packages
 
 override_dh_makeshlibs:
 	$(overriden_command) -V -- -c0
