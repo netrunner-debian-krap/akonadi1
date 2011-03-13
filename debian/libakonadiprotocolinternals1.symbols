@@ -1,5 +1,7 @@
-# SymbolsHelper-Confirmed: 1.5.0 amd64
+# SymbolsHelper-Confirmed: 1.5.1 amd64
 libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
+ (optional=templinst)_Z17qRegisterMetaTypeI5QListIN7Akonadi19NotificationMessageEEEiPKcPT_@Base 1.5.1
+ (optional=templinst)_Z17qRegisterMetaTypeIN7Akonadi19NotificationMessageEEiPKcPT_@Base 1.5.1
  (optional=templinst)_Z19qDBusMarshallHelperI5QListIN7Akonadi19NotificationMessageEEEvR13QDBusArgumentPKT_@Base 1.4.90
  (optional=templinst)_Z19qDBusMarshallHelperIN7Akonadi19NotificationMessageEEvR13QDBusArgumentPKT_@Base 1.4.90
  (optional=templinst)_Z21qDBusDemarshallHelperI5QListIN7Akonadi19NotificationMessageEEEvRK13QDBusArgumentPT_@Base 1.4.90
@@ -8,37 +10,54 @@ libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  (optional=templinst)_Z21qMetaTypeDeleteHelperIN7Akonadi19NotificationMessageEEvPT_@Base 1.4.90
  (optional=templinst)_Z24qMetaTypeConstructHelperI5QListIN7Akonadi19NotificationMessageEEEPvPKT_@Base 1.4.90
  (optional=templinst)_Z24qMetaTypeConstructHelperIN7Akonadi19NotificationMessageEEPvPKT_@Base 1.4.90
- _Z5qHashRKN7Akonadi19NotificationMessageE@Base 1.4.90
- _ZN10QByteArrayD1Ev@Base 1.4.90
- _ZN11QStringListD1Ev@Base 1.4.90
+ (optional=external)_Z5qHashRKN7Akonadi19NotificationMessageE@Base 1.4.90
+ (optional=external)_ZN10QByteArrayD1Ev@Base 1.4.90
+ (optional=external)_ZN10QByteArrayD2Ev@Base 1.5.1
  (optional=templinst)_ZN15QVarLengthArrayI10QByteArrayLi16EE7reallocEii@Base 1.4.90
  (optional=templinst)_ZN18QAlgorithmsPrivate11qSortHelperIPxx5qLessIxEEEvT_S4_RKT0_T1_@Base 1.4.90
+ (optional=templinst)_ZN18QSharedDataPointerIN7Akonadi12ImapInterval7PrivateEE13detach_helperEv@Base 1.5.1
+ (optional=templinst)_ZN18QSharedDataPointerIN7Akonadi12ImapInterval7PrivateEED1Ev@Base 1.5.1
+ (optional=templinst)_ZN18QSharedDataPointerIN7Akonadi12ImapInterval7PrivateEED2Ev@Base 1.5.1
  (optional=templinst)_ZN18QSharedDataPointerIN7Akonadi19NotificationMessage7PrivateEE13detach_helperEv@Base 1.4.90
  (optional=templinst)_ZN18QSharedDataPointerIN7Akonadi7ImapSet7PrivateEE13detach_helperEv@Base 1.4.90
  (optional=templinst)_ZN20QGlobalStaticDeleterIN7Akonadi20XdgBaseDirsSingletonEED1Ev@Base 1.4.90
- (optional=templinst)_ZN4QSetI10QByteArrayED1Ev@Base 1.4.90
+ (optional=templinst)_ZN20QGlobalStaticDeleterIN7Akonadi20XdgBaseDirsSingletonEED2Ev@Base 1.5.1
  (optional=templinst)_ZN5QHashI10QByteArray15QHashDummyValueE11deleteNode2EPN9QHashData4NodeE@Base 1.4.90
  (optional=templinst)_ZN5QHashI10QByteArray15QHashDummyValueE13detach_helperEv@Base 1.4.90
  (optional=templinst)_ZN5QHashI10QByteArray15QHashDummyValueE13duplicateNodeEPN9QHashData4NodeEPv@Base 1.4.90
+ (optional=templinst)_ZN5QHashI10QByteArray15QHashDummyValueED1Ev@Base 1.5.1
+ (optional=templinst)_ZN5QHashI10QByteArray15QHashDummyValueED2Ev@Base 1.5.1
  (optional=templinst)_ZN5QListI10QByteArrayE13detach_helperEi@Base 1.5.0
- (optional=templinst)_ZN5QListI10QByteArrayE4freeEPN9QListData4DataE@Base 1.4.90
+ (optional=templinst)_ZN5QListI10QByteArrayE13detach_helperEv@Base 1.5.1
+ (optional=templinst)_ZN5QListI10QByteArrayE18detach_helper_growEii@Base 1.5.1
+ (optional=templinst)_ZN5QListI10QByteArrayE5clearEv@Base 1.5.1
  (optional=templinst)_ZN5QListI10QByteArrayE6appendERKS0_@Base 1.4.90
+ (optional=templinst)_ZN5QListI10QByteArrayE7fromSetERK4QSetIS0_E@Base 1.5.1
+ (optional=templinst)_ZN5QListI10QByteArrayE7reserveEi@Base 1.5.1
  (optional=templinst)_ZN5QListI10QByteArrayED1Ev@Base 1.4.90
+ (optional=templinst)_ZN5QListI10QByteArrayED2Ev@Base 1.5.1
  (optional=templinst)_ZN5QListI7QStringE13detach_helperEi@Base 1.5.0
- (optional=templinst)_ZN5QListI7QStringE4freeEPN9QListData4DataE@Base 1.4.90
+ (optional=templinst)_ZN5QListI7QStringE13detach_helperEv@Base 1.5.1
+ (optional=templinst)_ZN5QListI7QStringE18detach_helper_growEii@Base 1.5.1
  (optional=templinst)_ZN5QListI7QStringE6appendERKS0_@Base 1.4.90
- (optional=templinst)_ZN5QListI7QStringEaSERKS1_@Base 1.5.0
+ (optional=templinst)_ZN5QListI7QStringED1Ev@Base 1.5.1
+ (optional=templinst)_ZN5QListI7QStringED2Ev@Base 1.5.1
  (optional=templinst)_ZN5QListI7QStringEpLERKS1_@Base 1.4.90
  (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEE13detach_helperEi@Base 1.5.0
- (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEE4freeEPN9QListData4DataE@Base 1.4.90
+ (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEE13detach_helperEv@Base 1.5.1
+ (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEE18detach_helper_growEii@Base 1.5.1
  (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEE6appendERKS1_@Base 1.4.90
  (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEED1Ev@Base 1.4.90
+ (optional=templinst)_ZN5QListIN7Akonadi12ImapIntervalEED2Ev@Base 1.5.1
  (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE13detach_helperEi@Base 1.5.0
- (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE4freeEPN9QListData4DataE@Base 1.4.90
+ (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE13detach_helperEv@Base 1.5.1
+ (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE18detach_helper_growEii@Base 1.5.1
+ (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE5clearEv@Base 1.5.1
  (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEE6appendERKS1_@Base 1.4.90
  (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEED1Ev@Base 1.4.90
- _ZN6QDebugD1Ev@Base 1.4.90
- _ZN6QDebuglsEPKc@Base 1.5.0
+ (optional=templinst)_ZN5QListIN7Akonadi19NotificationMessageEED2Ev@Base 1.5.1
+ (optional=external)_ZN6QDebugD1Ev@Base 1.4.90
+ (optional=external)_ZN6QDebugD2Ev@Base 1.5.1
  _ZN7Akonadi10ImapParser10parseBlockERK10QByteArray@Base 1.4.90
  _ZN7Akonadi10ImapParser11parseNumberERK10QByteArrayRxPbi@Base 1.4.90
  _ZN7Akonadi10ImapParser11parseStringERK10QByteArrayR7QStringi@Base 1.4.90
@@ -107,7 +126,6 @@ libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  _ZN7Akonadi19NotificationMessageaSERKS0_@Base 1.4.90
  _ZN7Akonadi20XdgBaseDirsSingleton14systemPathListEPKcS2_@Base 1.4.90
  _ZN7Akonadi20XdgBaseDirsSingleton8homePathEPKcS2_@Base 1.4.90
- _ZN7Akonadi20XdgBaseDirsSingletonD1Ev@Base 1.4.90
  _ZN7Akonadi7ImapSet3addERK5QListIxE@Base 1.4.90
  _ZN7Akonadi7ImapSet3addERK7QVectorIxE@Base 1.4.90
  _ZN7Akonadi7ImapSet3addERKNS_12ImapIntervalE@Base 1.4.90
@@ -119,8 +137,13 @@ libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  _ZN7Akonadi7ImapSetD2Ev@Base 1.4.90
  _ZN7Akonadi7ImapSetaSERKS0_@Base 1.4.90
  _ZN7QStringD1Ev@Base 1.4.90
+ _ZN7QStringD2Ev@Base 1.5.1
+ (optional=templinst)_ZN7QVectorIxE13detach_helperEv@Base 1.5.1
  (optional=templinst)_ZN7QVectorIxE7reallocEii@Base 1.4.90
+ (optional=templinst)_ZN7QVectorIxEC1Ei@Base 1.5.1
+ (optional=templinst)_ZN7QVectorIxEC2Ei@Base 1.5.1
  (optional=templinst)_ZN7QVectorIxED1Ev@Base 1.4.90
+ (optional=templinst)_ZN7QVectorIxED2Ev@Base 1.5.1
  _ZNK10QByteArrayixEi@Base 1.4.90
  (optional=templinst)_ZNK4QSetI10QByteArrayE6toListEv@Base 1.5.0
  (optional=templinst)_ZNK5QHashI10QByteArray15QHashDummyValueE8findNodeERKS0_Pj@Base 1.4.90
@@ -155,5 +178,4 @@ libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  (optional=templinst)_ZZN11QMetaTypeIdIN7Akonadi19NotificationMessageEE14qt_metatype_idEvE11metatype_id@Base 1.4.90
  _ZlsR13QDBusArgumentRKN7Akonadi19NotificationMessageE@Base 1.4.90
  _ZlsR6QDebugRKN7Akonadi12ImapIntervalE@Base 1.4.90
- _ZplRK7QString5QChar@Base 1.4.90
  _ZrsRK13QDBusArgumentRN7Akonadi19NotificationMessageE@Base 1.4.90
