@@ -32,7 +32,8 @@ akonadi (1.5.0-0r1) UNRELEASED; urgency=low
   * Drop Replaces from libakonadi-dev for very old pre-4.1 KDE versions.
   * Switch to quilt 3.0 format:
     - add appropriate debian/source/format;
-    - remove quilt from Build-Depends.
+    - remove quilt from Build-Depends;
+    - remove debian/README.source, no longer necessary.
   * Bump Standards-Version to 3.9.1: add Breaks next to Replaces where needed
     or replace Conflicts with Breaks respectively,
   * Improve passing of MYSQLD_EXECUTABLE flag to cmake.
