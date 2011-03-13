@@ -44,8 +44,7 @@ Description: libraries for the Akonadi PIM storage service
 Package: libakonadi-dev
 Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libakonadiprotocolinternals1 (= ${binary:Version}),
- libboost-dev
+Depends: ${misc:Depends}, libakonadiprotocolinternals1 (= ${binary:Version}), libboost-dev
 Suggests: pkg-config
 Description: development files for the Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
