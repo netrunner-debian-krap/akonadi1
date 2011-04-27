@@ -7,16 +7,16 @@ include /usr/share/pkg-kde-tools/qt-kde-team/2/library-packages.mk
 backend_packages = $(filter akonadi-backend-%,$(shell dh_listpackages))
 
 override_dh_auto_configure:
-	$(overriden_command) -- -DMYSQLD_EXECUTABLE:STRING=/usr/sbin/mysqld \
+	$(overridden_command) -- -DMYSQLD_EXECUTABLE:STRING=/usr/sbin/mysqld \
 	    -DCONFIG_INSTALL_DIR=/etc
 
 override_dh_installdocs:
 	# Install README.Debian to backend packages
-	$(overriden_command) -A -pakonadi-server $(foreach p,$(backend_packages),-p$(p)) debian/README.Debian
-	$(overriden_command) --remaining-packages
+	$(overridden_command) -A -pakonadi-server $(foreach p,$(backend_packages),-p$(p)) debian/README.Debian
+	$(overridden_command) --remaining-packages
 
 override_dh_makeshlibs:
-	$(overriden_command) -V -- -c0
+	$(overridden_command) -V -- -c0
 
 override_dh_strip:
-	$(overriden_command) --dbg-package=akonadi-dbg
+	$(overridden_command) --dbg-package=akonadi-dbg
