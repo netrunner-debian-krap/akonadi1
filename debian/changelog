@@ -1,4 +1,4 @@
-akonadi (1.5.1-2) UNRELEASED; urgency=low
+akonadi (1.5.1-2) experimental; urgency=low
 
   * Replace $(overriden_command) with $(overridden_command) in debian/rules.
     Requires pkg-kde-tools 0.12.
@@ -9,7 +9,7 @@ akonadi (1.5.1-2) UNRELEASED; urgency=low
   * Update symbol file: private symbols disappeared after building with hidden
     visibility.
 
- -- Modestas Vainius <modax@debian.org>  Wed, 27 Apr 2011 15:16:47 +0300
+ -- Modestas Vainius <modax@debian.org>  Mon, 02 May 2011 01:40:34 +0300
 
 akonadi (1.5.1-1) experimental; urgency=low
 
