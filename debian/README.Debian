@@ -112,7 +112,7 @@ At the moment, the following backends are supported:
   available:
 
   [General]
-  Driver=SQLITE3
+  Driver=QSQLITE3
 
   [QSQLITE3]
   Name=     ; path to the database file
