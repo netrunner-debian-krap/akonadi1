@@ -5,6 +5,9 @@ akonadi (1.6.0-0r1) UNRELEASED; urgency=low
   [ José Manuel Santamaría Lema ]
   * Update symbols files.
 
+  [ Felix Geyer ]
+  * Add a watch file.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 09 Aug 2011 17:23:09 +0200
 
 akonadi (1.5.3-2) unstable; urgency=low
