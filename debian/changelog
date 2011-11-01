@@ -7,6 +7,7 @@ akonadi (1.6.0-0r1) UNRELEASED; urgency=low
 
   [ Felix Geyer ]
   * Add a watch file.
+  * Use DEB_*_MAINT_APPEND instead of setting CFLAGS/CXXFLAGS.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 09 Aug 2011 17:23:09 +0200
 
