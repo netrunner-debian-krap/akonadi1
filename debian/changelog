@@ -2,9 +2,6 @@ akonadi (1.6.0-0r1) UNRELEASED; urgency=low
 
   * New upstream release.
 
-  [ José Manuel Santamaría Lema ]
-  * Update symbols files.
-
   [ Felix Geyer ]
   * Add a watch file.
   * Use DEB_*_MAINT_APPEND instead of setting CFLAGS/CXXFLAGS.
