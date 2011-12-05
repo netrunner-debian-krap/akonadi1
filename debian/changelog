@@ -1,4 +1,4 @@
-akonadi (1.6.2-0r1) UNRELEASED; urgency=low
+akonadi (1.6.2-1) experimental; urgency=low
 
   * New upstream release.
 
@@ -6,7 +6,7 @@ akonadi (1.6.2-0r1) UNRELEASED; urgency=low
   * Add a watch file.
   * Use DEB_*_MAINT_APPEND instead of setting CFLAGS/CXXFLAGS.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 09 Aug 2011 17:23:09 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 01 Dec 2011 17:18:06 +0100
 
 akonadi (1.5.3-2) unstable; urgency=low
 
