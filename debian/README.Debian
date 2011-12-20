@@ -86,23 +86,6 @@ At the moment, the following backends are supported:
   CleanServerShutdownCommand= ; a command to shutdown internal server cleanly,
                               ; default is reasonable
 
-* ODBC backend provided by the akonadi-backend-odbc package. By default, it
-  backend will try to connect to the Virtuoso server instance which is started
-  by Nepomuk in the KDE environment.
-
-  This backend uses official QSql ODBC driver. The following configuration
-  options are available:
-
-  [General]
-  Driver=QODBC
-
-  [QODBC]
-  Name=     ; ODBC connection string, defaults to
-            ; host=localhost:1111;uid=dba;pwd=dba;driver=/opt/virtuoso/lib/virtodbc.so
-  User=     ; dabatase user name if not specified in the connection string
-  Password= ; database user password if not specified in the connection string
-  Options=  ; options, defaults to SQL_ATTR_ODBC_VERSION=SQL_OV_ODBC3
-
 * SQLite backend provided by the akonadi-backend-sqlite package. It uses
   embedded SQLite database hence it does not need a separate instance of the
   SQL server.
