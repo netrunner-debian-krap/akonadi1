@@ -3,6 +3,8 @@ akonadi (1.7.2-0r1) UNRELEASED; urgency=low
   * New upstream release.
   * Drop x11_not_required.diff, no longer needed as internal FindQt4 was
     dropped.
+  * Disable tests which require an active DBus daemon. It is not available on
+    buildds (patch disable_dbus_requiring_tests.diff).
 
  -- Modestas Vainius <modax@debian.org>  Sat, 12 May 2012 22:31:34 +0300
 
