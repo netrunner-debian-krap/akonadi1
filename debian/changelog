@@ -5,6 +5,7 @@ akonadi (1.7.2-0r1) UNRELEASED; urgency=low
     dropped.
   * Disable tests which require an active DBus daemon. It is not available on
     buildds (patch disable_dbus_requiring_tests.diff).
+  * Bump Standards-Version to 3.9.3: no changes needed.
 
  -- Modestas Vainius <modax@debian.org>  Sat, 12 May 2012 22:31:34 +0300
 
