@@ -1,3 +1,9 @@
+akonadi (1.7.2-0r1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Modestas Vainius <modax@debian.org>  Sat, 12 May 2012 22:31:34 +0300
+
 akonadi (1.6.2-2) unstable; urgency=low
 
   * Team upload. Upload to unstable.
