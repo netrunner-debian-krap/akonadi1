@@ -1,4 +1,4 @@
-akonadi (1.7.2-0r1) UNRELEASED; urgency=low
+akonadi (1.7.2-1) unstable; urgency=low
 
   * New upstream release.
   * Drop x11_not_required.diff, no longer needed as internal FindQt4 was
@@ -7,7 +7,7 @@ akonadi (1.7.2-0r1) UNRELEASED; urgency=low
     buildds (patch disable_dbus_requiring_tests.diff).
   * Bump Standards-Version to 3.9.3: no changes needed.
 
- -- Modestas Vainius <modax@debian.org>  Sat, 12 May 2012 22:31:34 +0300
+ -- Modestas Vainius <modax@debian.org>  Sat, 12 May 2012 23:41:01 +0300
 
 akonadi (1.6.2-2) unstable; urgency=low
 
