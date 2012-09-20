@@ -47,7 +47,7 @@ At the moment, the following backends are supported:
   This backend uses official QSql MySQL driver. The following configuration
   options are available:
 
-  [General]
+  [%General]
   Driver=QMYSQL
 
   [QMYSQL]
@@ -71,7 +71,7 @@ At the moment, the following backends are supported:
   This backend uses QSql PSQL driver. The following configuration options are
   available:
 
-  [General]
+  [%General]
   Driver=QPSQL
 
   [QPSQL]
@@ -94,7 +94,7 @@ At the moment, the following backends are supported:
   also shipped in the backend package. The following configuration options are
   available:
 
-  [General]
+  [%General]
   Driver=QSQLITE3
 
   [QSQLITE3]
