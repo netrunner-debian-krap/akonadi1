@@ -5,6 +5,7 @@ akonadi (1.9.0-0r0) UNRELEASED; urgency=low
   [ José Manuel Santamaría Lema ]
   * Update disable_dbus_requiring_tests.diff; some tests were added and
     some of them need D-Bus.
+  * Update installed files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 16 Nov 2012 07:41:00 +0100
 
