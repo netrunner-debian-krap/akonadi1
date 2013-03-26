@@ -1,5 +1,9 @@
 akonadi (1.7.2-3) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * akonadi-backend-mysql: depend on a real mysql-server-core-5.5 before the
+    virtual mysql-server-core. This should help apt in really choosing -mysql
+    when upgrading from squeeze. (Closes: #686147, #702919)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 26 Mar 2013 19:57:10 +0100
 
