@@ -1,3 +1,9 @@
+akonadi (1.9.1-2) experimental; urgency=low
+
+  * Merge in the uploads to unstable.
+
+ -- Sune Vuorela <sune@debian.org>  Tue, 02 Apr 2013 22:52:29 +0200
+
 akonadi (1.9.1-1) experimental; urgency=low
 
   * New upstream release.
