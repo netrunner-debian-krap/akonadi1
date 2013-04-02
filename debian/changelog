@@ -12,13 +12,24 @@ akonadi (1.9.1-1) experimental; urgency=low
 
  -- Sune Vuorela <sune@debian.org>  Mon, 25 Mar 2013 17:00:16 +0100
 
-akonadi (1.7.2-2) UNRELEASED; urgency=low
+akonadi (1.7.2-3) unstable; urgency=low
+
+  * Team upload.
+  * akonadi-backend-mysql: depend on a real mysql-server-core-5.5 before the
+    virtual mysql-server-core. This should help apt in really choosing -mysql
+    when upgrading from squeeze. (Closes: #686147, #702919)
+
+ -- Pino Toscano <pino@debian.org>  Tue, 26 Mar 2013 20:02:38 +0100
+
+akonadi (1.7.2-2) unstable; urgency=low
+
+  * Team upload.
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Change [General] to [%General] in README:Debian (Closes: #688236).
+  * Change [General] to [%General] in README.Debian (Closes: #688236).
     Thanks Alexander Wuerstlein for noticing.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 20 Sep 2012 14:58:24 -0300
+ -- Pino Toscano <pino@debian.org>  Wed, 05 Dec 2012 11:07:57 +0100
 
 akonadi (1.7.2-1) unstable; urgency=low
 

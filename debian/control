@@ -57,7 +57,7 @@ Description: development files for the Akonadi PIM storage service
 Package: akonadi-backend-mysql
 Section: misc
 Architecture: all
-Depends: ${misc:Depends}, mysql-server-core, libqt4-sql-mysql
+Depends: ${misc:Depends}, mysql-server-core-5.5 | mysql-server-core, libqt4-sql-mysql
 Recommends: akonadi-server
 Replaces: akonadi-server (<< 1.3.60~)
 Breaks: akonadi-server (<< 1.3.60~)
