@@ -2,6 +2,7 @@ akonadi (1.9.2-1) UNRELEASED; urgency=low
 
   * New upstream release.
   * Bump debhelper build-dep and compat to 9.
+  * Add myself to the Uploaders field.
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 10 May 2013 23:12:21 +0200
 
