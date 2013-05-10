@@ -1,11 +1,11 @@
-akonadi (1.9.2-1) UNRELEASED; urgency=low
+akonadi (1.9.2-1) unstable; urgency=low
 
   * New upstream release.
   * Bump debhelper build-dep and compat to 9.
   * Add myself to the Uploaders field.
   * Bump Standards-Version to 3.9.4.
 
- -- Maximiliano Curia <maxy@debian.org>  Fri, 10 May 2013 23:12:21 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 11 May 2013 00:57:28 +0200
 
 akonadi (1.9.1-2) experimental; urgency=low
 
