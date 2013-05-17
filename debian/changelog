@@ -1,13 +1,13 @@
-akonadi (1.9.2-2) UNRELEASED; urgency=low
+akonadi (1.9.2-2) unstable; urgency=low
 
-  [ Pino Toscano ]
+  * Team upload.
   * Force the installation of the Qt plugins (such as qsqlite3) within Qt's
     plugin directory: (Closes: #708007)
     - pass -DINSTALL_QSQLITE_IN_QT_PREFIX=ON to cmake
     - adjust akonadi-backend-sqlite.install
     - add ${misc:Pre-Depends} in akonadi-backend-sqlite
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 17 May 2013 15:04:26 +0200
+ -- Pino Toscano <pino@debian.org>  Fri, 17 May 2013 15:39:30 +0200
 
 akonadi (1.9.2-1) unstable; urgency=low
 
