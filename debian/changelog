@@ -1,3 +1,9 @@
+akonadi (1.9.2-3) UNRELEASED; urgency=low
+
+  * Update vcs-fields.
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 06 Jun 2013 10:22:50 +0200
+
 akonadi (1.9.2-2) unstable; urgency=low
 
   * Team upload.
