@@ -2,6 +2,7 @@ akonadi (1.10.2-1) UNRELEASED; urgency=low
 
   * Update vcs-fields.
   * Refresh patch disable_dbus_requiring_tests.
+  * Update installed files.
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 30 Aug 2013 12:42:10 +0200
 

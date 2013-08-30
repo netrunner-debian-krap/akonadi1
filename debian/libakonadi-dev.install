@@ -3,6 +3,7 @@ usr/include/akonadi/private/capabilities_p.h
 usr/include/akonadi/private/imapparser_p.h
 usr/include/akonadi/private/imapset_p.h
 usr/include/akonadi/private/notificationmessage_p.h
+usr/include/akonadi/private/notificationmessagev2_p.h
 usr/include/akonadi/private/protocol_p.h
 usr/include/akonadi/private/xdgbasedirs_p.h
 usr/lib/cmake/Akonadi/AkonadiConfig.cmake
