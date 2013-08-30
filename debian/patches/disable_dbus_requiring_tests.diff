@@ -2,7 +2,7 @@ From: Modestas Vainius <modax@debian.org>
 Subject: Disable tests which require active DBus
 Origin: vendor
 Forwarded: not-needed
-Last-Update: 2013-02-07
+Last-Update: 2013-08-30
 
 The following tests need active DBus daemon at the moment. Disable them.
 
@@ -16,11 +16,13 @@ The following tests need active DBus daemon at the moment. Disable them.
 - akonadi-dbconfigtest
 - akonadi-parthelpertest
 
---- a/server/tests/unittest/CMakeLists.txt
-+++ b/server/tests/unittest/CMakeLists.txt
-@@ -18,16 +18,16 @@ macro(add_server_test _source _libs)
-   endif (AKONADI_STATIC_SQLITE)
- endmacro(add_server_test)
+Index: akonadi-1.10.2/server/tests/unittest/CMakeLists.txt
+===================================================================
+--- akonadi-1.10.2.orig/server/tests/unittest/CMakeLists.txt	2013-08-30 13:37:27.067938713 +0200
++++ akonadi-1.10.2/server/tests/unittest/CMakeLists.txt	2013-08-30 13:39:31.370954188 +0200
+@@ -19,17 +19,17 @@
+   endif()
+ endmacro()
  
 -add_server_test(imapstreamparsertest.cpp akonadiprivate)
 +#add_server_test(imapstreamparsertest.cpp akonadiprivate)
@@ -39,8 +41,10 @@ The following tests need active DBus daemon at the moment. Disable them.
 -add_server_test(handlertest.cpp akonadiprivate)
 -add_server_test(dbconfigtest.cpp akonadiprivate)
 -add_server_test(parthelpertest.cpp akonadiprivate)
+-add_server_test(clientcapabilityaggregatortest.cpp akonadiprivate)
 +#add_server_test(akdbustest.cpp akonadiprivate)
 +#add_server_test(akstandarddirstest.cpp akonadiprivate)
 +#add_server_test(handlertest.cpp akonadiprivate)
 +#add_server_test(dbconfigtest.cpp akonadiprivate)
 +#add_server_test(parthelpertest.cpp akonadiprivate)
++#add_server_test(clientcapabilityaggregatortest.cpp akonadiprivate)
