@@ -1,4 +1,4 @@
-akonadi (1.10.2-1) UNRELEASED; urgency=low
+akonadi (1.10.2-1) experimental; urgency=low
 
   * Update vcs-fields.
   * Refresh patch disable_dbus_requiring_tests.
