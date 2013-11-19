@@ -1,6 +1,7 @@
 akonadi (1.10.3-1) UNRELEASED; urgency=low
 
   * New upstream release. (Closes: #729615, #716922)
+  * Update build dependencies.
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 15 Nov 2013 17:42:01 +0100
 
