@@ -8,8 +8,8 @@ Uploaders: Sune Vuorela <debian@pusling.com>,
            Maximiliano Curia <maxy@debian.org>
 Build-Depends: debhelper (>= 9), cmake (>= 2.8.8), automoc,
  pkg-kde-tools (>= 0.12),
- libqt4-dev (>= 4:4.6.0), shared-mime-info (>= 0.20), libmysqlclient-dev,
- libxslt-dev, libsoprano-dev (>= 2.1.1), xsltproc, libdbus-1-dev,
+ libqt4-dev (>= 4:4.8.0), shared-mime-info (>= 0.20), libmysqlclient-dev,
+ libxslt-dev, libsoprano-dev (>= 2.7.56), xsltproc, libdbus-1-dev,
  libboost-program-options-dev,
  libsqlite3-dev (>= 3.6.23), mysql-server-core
 Standards-Version: 3.9.4
