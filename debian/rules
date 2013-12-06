@@ -3,6 +3,8 @@
 export DEB_CFLAGS_MAINT_APPEND += -fvisibility=hidden -fvisibility-inlines-hidden
 export DEB_CXXFLAGS_MAINT_APPEND = -fvisibility=hidden -fvisibility-inlines-hidden
 
+dh := --with acc
+
 include /usr/share/pkg-kde-tools/qt-kde-team/2/debian-qt-kde.mk
 libpkgs_gen_strict_local_shlibs = $(libpkgs_all_packages)
 include /usr/share/pkg-kde-tools/qt-kde-team/2/library-packages.mk
