@@ -5,6 +5,7 @@ akonadi (1.11.0-1) UNRELEASED; urgency=low
   * Update subst var for akonadi-backend-mysql.
   * Add libxml2-utils to the build deps, to be used in the tests.
   * Bump Standards-Version to 3.9.5, no changes needed.
+  * New upstream patch: dont_do_redundant_flag_changes.diff
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 06 Dec 2013 16:24:12 +0100
 
