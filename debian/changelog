@@ -9,6 +9,7 @@ akonadi (1.11.0-1) UNRELEASED; urgency=low
   * New upstream patch: always_verify_writing_data_to_external_file.diff
   * Add dbus-x11 to launch dbus tests.
   * Update symbols file.
+  * Update install files.
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 06 Dec 2013 16:24:12 +0100
 

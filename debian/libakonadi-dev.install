@@ -22,5 +22,6 @@ usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.NotificationSource.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Preprocessor.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Resource.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Server.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.StorageDebugger.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Tracer.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.TracerNotification.xml
