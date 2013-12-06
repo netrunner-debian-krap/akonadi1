@@ -1,2 +1,3 @@
 # disable_dbus_requiring_tests.diff
 dont_do_redundant_flag_changes.diff
+always_verify_writing_data_to_external_file.diff
