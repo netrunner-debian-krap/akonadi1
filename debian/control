@@ -24,7 +24,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  akonadi-backend-mysql (= ${source:Version}) |
  akonadi-backend-sqlite (= ${binary:Version}) |
  akonadi-backend-postgresql (= ${source:Version})
-Suggests: akonadi-backend-mysql (= ${binary:Version}),
+Suggests: akonadi-backend-mysql (= ${source:Version}),
  akonadi-backend-sqlite (= ${binary:Version}),
  akonadi-backend-postgresql (= ${source:Version})
 Description: Akonadi PIM storage service
@@ -50,7 +50,8 @@ Description: libraries for the Akonadi PIM storage service
 Package: libakonadi-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, libakonadiprotocolinternals1 (= ${binary:Version}), libboost-dev
+Depends: ${misc:Depends}, libakonadiprotocolinternals1 (= ${binary:Version}),
+ libboost-dev
 Suggests: pkg-config
 Description: development files for the Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)

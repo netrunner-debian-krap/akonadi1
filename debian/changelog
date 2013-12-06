@@ -2,6 +2,7 @@ akonadi (1.11.0-1) UNRELEASED; urgency=low
 
   * New upstream release.
   * Update build dependencies.
+  * Update subst var for akonadi-backend-mysql.
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 06 Dec 2013 16:24:12 +0100
 
