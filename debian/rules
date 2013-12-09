@@ -28,4 +28,8 @@ override_dh_strip:
 	$(overridden_command) --dbg-package=akonadi-dbg
 
 override_dh_auto_test:
-	xvfb-run dbus-launch --exit-with-session $(overridden_command)
+	[ -x $(CURDIR)/debian/tmp/home ] || \
+	    mkdir -p $(CURDIR)/debian/tmp/home
+	HOME=$(CURDIR)/debian/tmp/home \
+	     xvfb-run dbus-launch --exit-with-session $(overridden_command)
+	rm -rf $(CURDIR)/debian/tmp/home
