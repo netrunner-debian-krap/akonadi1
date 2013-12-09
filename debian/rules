@@ -28,4 +28,4 @@ override_dh_strip:
 	$(overridden_command) --dbg-package=akonadi-dbg
 
 override_dh_auto_test:
-	dbus-launch $(overridden_command)
+	xvfb-run dbus-launch --exit-with-session $(overridden_command)
