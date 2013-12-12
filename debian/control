@@ -11,9 +11,7 @@ Build-Depends: debhelper (>= 9), cmake (>= 2.8.8), automoc,
  libqt4-dev (>= 4:4.8.0), shared-mime-info (>= 0.20), libmysqlclient-dev,
  libxslt-dev, libsoprano-dev (>= 2.7.56), xsltproc, libdbus-1-dev,
  libboost-program-options-dev,
- libsqlite3-dev (>= 3.6.23), mysql-server-core, libxml2-utils,
- xvfb, xauth, dbus-x11,
- dh-acc, exuberant-ctags
+ libsqlite3-dev (>= 3.6.23), mysql-server-core
 Standards-Version: 3.9.5
 Homepage: http://pim.kde.org/akonadi
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-req/akonadi.git

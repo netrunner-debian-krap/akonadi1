@@ -3,11 +3,9 @@ akonadi (1.11.0-1) UNRELEASED; urgency=low
   * New upstream release.
   * Update build dependencies.
   * Update subst var for akonadi-backend-mysql.
-  * Add libxml2-utils to the build deps, to be used in the tests.
   * Bump Standards-Version to 3.9.5, no changes needed.
   * New upstream patch: dont_do_redundant_flag_changes.diff
   * New upstream patch: always_verify_writing_data_to_external_file.diff
-  * Add dbus-x11 to launch dbus tests.
   * Update symbols file.
   * Update install files.
 
