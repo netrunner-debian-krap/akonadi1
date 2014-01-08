@@ -1,0 +1,26 @@
+commit 980b02ff4b0ba7e49f3b32d39ecd76121456c3f6
+Author: Dan Vrátil <dvratil@redhat.com>
+Date:   Thu Dec 12 16:13:41 2013 +0100
+
+    Correctly detect inter-resource moves
+    
+    When comparing the source and destination resources, the item
+    already has the destination collection and resource  set, so
+    we need to compare it with the source resource
+    
+    BUG: 328298
+    FIXED-IN: 1.11.1
+
+diff --git a/server/src/handler/move.cpp b/server/src/handler/move.cpp
+index b5b20f4..8bea8f8 100644
+--- a/server/src/handler/move.cpp
++++ b/server/src/handler/move.cpp
+@@ -106,7 +106,7 @@ bool Move::parseStream()
+       Q_FOREACH ( PimItem moved, toMove.values( sourceId ) ) {
+         // reset RID on inter-resource moves, but only after generating the change notification
+         // so that this still contains the old one for the source resource
+-        const bool isInterResourceMove = moved.collection().resource().id() != destResource.id();
++        const bool isInterResourceMove = moved.collection().resource().id() != source.resource().id();
+         if ( isInterResourceMove ) {
+           moved.setRemoteId( QString() );
+         }
