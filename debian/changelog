@@ -1,4 +1,4 @@
-akonadi (1.11.0-1) UNRELEASED; urgency=low
+akonadi (1.11.0-1) unstable; urgency=low
 
   * New upstream release.
   * Update build dependencies.
@@ -10,7 +10,7 @@ akonadi (1.11.0-1) UNRELEASED; urgency=low
   * Update install files.
   * New upstream patch: correctly_detect_inter-resource_moves.diff.
 
- -- Maximiliano Curia <maxy@debian.org>  Fri, 06 Dec 2013 16:24:12 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 08 Jan 2014 15:40:35 -0300
 
 akonadi (1.10.3-1) unstable; urgency=medium
 
