@@ -1,8 +1,9 @@
-akonadi (1.11.0-2) UNRELEASED; urgency=medium
+akonadi (1.12.0-1) UNRELEASED; urgency=medium
 
   * 
+  * New upstream release.
 
- -- Maximiliano Curia <maxy@debian.org>  Sat, 11 Jan 2014 13:49:53 -0300
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 31 Mar 2014 22:45:11 +0200
 
 akonadi (1.11.0-1) unstable; urgency=low
 
