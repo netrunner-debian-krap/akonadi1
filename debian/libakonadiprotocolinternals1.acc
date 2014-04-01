@@ -2,10 +2,11 @@
 <descriptor>
 
 <version>
-    1.10.3
+    1.12.0
 </version>
 
 <headers>
+    /usr/include/akonadi/abstractsearchplugin.h
     /usr/include/akonadi/private
 </headers>
 
