@@ -1,9 +1,11 @@
+usr/include/akonadi/abstractsearchplugin.h
 usr/include/akonadi/private/akonadiprotocolinternals_export.h
 usr/include/akonadi/private/capabilities_p.h
 usr/include/akonadi/private/imapparser_p.h
 usr/include/akonadi/private/imapset_p.h
 usr/include/akonadi/private/notificationmessage_p.h
 usr/include/akonadi/private/notificationmessagev2_p.h
+usr/include/akonadi/private/notificationmessagev3_p.h
 usr/include/akonadi/private/protocol_p.h
 usr/include/akonadi/private/xdgbasedirs_p.h
 usr/lib/cmake/Akonadi/AkonadiConfig.cmake
@@ -13,6 +15,7 @@ usr/lib/cmake/Akonadi/AkonadiTargetsWithPrefix.cmake
 usr/lib/libakonadiprotocolinternals.so
 usr/lib/pkgconfig/akonadi.pc
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Agent.Control.xml
+usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Agent.Search.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.Agent.Status.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.AgentManager.xml
 usr/share/dbus-1/interfaces/org.freedesktop.Akonadi.ControlManager.xml
