@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 1.11.0 amd64
+# SymbolsHelper-Confirmed: 1.11.0 amd64 sparc
 libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  _ZN7Akonadi10ImapParser10parseBlockERK10QByteArray@Base 1.5.1
  _ZN7Akonadi10ImapParser11parseNumberERK10QByteArrayRxPbi@Base 1.5.1
@@ -85,6 +85,8 @@ libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  _ZN7Akonadi21NotificationMessageV26EntityD2Ev@Base 1.10.2
  (optional=templinst)_ZN7Akonadi21NotificationMessageV27Private21appendAndCompressImplI5QListIS0_EEEbRT_RKS0_@Base 1.10.2
  (optional=templinst)_ZN7Akonadi21NotificationMessageV27Private21appendAndCompressImplI7QVectorIS0_EEEbRT_RKS0_@Base 1.10.2
+ (arch=sparc)_ZN7Akonadi21NotificationMessageV27PrivateD1Ev@Base 1.11.0
+ (arch=sparc)_ZN7Akonadi21NotificationMessageV27PrivateD2Ev@Base 1.11.0
  _ZN7Akonadi21NotificationMessageV27setTypeENS0_4TypeE@Base 1.10.2
  _ZN7Akonadi21NotificationMessageV29addEntityExRK7QStringS3_S3_@Base 1.10.2
  _ZN7Akonadi21NotificationMessageV2C1ERKS0_@Base 1.10.2
