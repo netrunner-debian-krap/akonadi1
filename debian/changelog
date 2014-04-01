@@ -8,6 +8,7 @@ akonadi (1.12.0-1) UNRELEASED; urgency=medium
   * Update install files.
   * Remove old abi information, update acc file.
   * Update symbols from 1.11.0.
+  * Update symbols.
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 31 Mar 2014 22:45:11 +0200
 
