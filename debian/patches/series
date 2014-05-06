@@ -1,0 +1,3 @@
+upstream_1.12-Use-per-thread-QDBusConnections.patch
+upstream_1.12-Remove-the-invalid-GID-part-from-PartTable-before-st.patch
+upstream_1.12-Fix-retrieving-of-GID-from-SQL-query-result-in-Fetch.patch
