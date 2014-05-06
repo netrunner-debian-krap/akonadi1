@@ -1,6 +1,11 @@
+akonadi (1.12.0-2) UNRELEASED; urgency=medium
+
+  * Update symbols for 1.12.0 version.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 06 May 2014 16:22:47 +0200
+
 akonadi (1.12.0-1) experimental; urgency=medium
 
-  * 
   * New upstream release.
   * Remove patch: dont_do_redundant_flag_changes.diff
   * Remove patch: always_verify_writing_data_to_external_file.diff
