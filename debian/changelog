@@ -1,4 +1,4 @@
-akonadi (1.12.1-1~) UNRELEASED; urgency=medium
+akonadi (1.12.1-1) unstable; urgency=medium
 
   * New upstream release.
   * Update symbols for 1.12.0 version.
@@ -9,7 +9,7 @@ akonadi (1.12.1-1~) UNRELEASED; urgency=medium
   * New upstream patch: upstream_1.12-Fix-retrieving-of-GID-from-SQL-
     query-result-in-Fetch.patch
 
- -- Maximiliano Curia <maxy@debian.org>  Tue, 06 May 2014 16:24:06 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 06 May 2014 17:19:48 +0200
 
 akonadi (1.12.0-1) experimental; urgency=medium
 
