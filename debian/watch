@@ -1,2 +1,2 @@
 version=3
-ftp://ftp.kde.org/pub/kde/stable/akonadi/src/akonadi-([\d\.]+)\.tar\.bz2
+http://download.kde.org/stable/([\d.]+)/src/akonadi-([\d.]+).tar.xz
