@@ -6,12 +6,20 @@ Uploaders: Sune Vuorela <debian@pusling.com>,
            Modestas Vainius <modax@debian.org>,
            Fathi Boudra <fabo@debian.org>,
            Maximiliano Curia <maxy@debian.org>
-Build-Depends: debhelper (>= 9), cmake (>= 2.8.8), automoc,
- pkg-kde-tools (>= 0.12),
- libqt4-dev (>= 4:4.8.0), shared-mime-info (>= 0.20), libmysqlclient-dev,
- libxslt-dev, libsoprano-dev (>= 2.7.56), xsltproc, libdbus-1-dev,
- libboost-program-options-dev,
- libsqlite3-dev (>= 3.6.23), mysql-server-core
+Build-Depends: automoc,
+               cmake (>= 2.8.8),
+               debhelper (>= 9),
+               libboost-program-options-dev,
+               libdbus-1-dev,
+               libmysqlclient-dev,
+               libqt4-dev (>= 4:4.8.0),
+               libsoprano-dev (>= 2.7.56),
+               libsqlite3-dev (>= 3.6.23),
+               libxslt-dev,
+               mysql-server-core,
+               pkg-kde-tools (>= 0.12),
+               shared-mime-info (>= 0.20),
+               xsltproc
 Standards-Version: 3.9.5
 XS-Testsuite: autopkgtest
 Homepage: http://pim.kde.org/akonadi
@@ -21,13 +29,12 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-req/akonadi.git
 Package: akonadi-server
 Section: net
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},
- akonadi-backend-mysql (= ${source:Version}) |
- akonadi-backend-sqlite (= ${binary:Version}) |
- akonadi-backend-postgresql (= ${source:Version})
+Depends: akonadi-backend-mysql (= ${source:Version}) | akonadi-backend-sqlite (= ${binary:Version}) | akonadi-backend-postgresql (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Suggests: akonadi-backend-mysql (= ${source:Version}),
- akonadi-backend-sqlite (= ${binary:Version}),
- akonadi-backend-postgresql (= ${source:Version})
+          akonadi-backend-postgresql (= ${source:Version}),
+          akonadi-backend-sqlite (= ${binary:Version})
 Description: Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
  storage service. It provides a common framework for applications to store and
@@ -37,7 +44,7 @@ Description: Akonadi PIM storage service
 
 Package: libakonadiprotocolinternals1
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: akonadi-server (= ${binary:Version})
 Replaces: libakonadiprivate1 (<< 1.4.90)
 Breaks: libakonadiprivate1 (<< 1.4.90)
@@ -51,8 +58,9 @@ Description: libraries for the Akonadi PIM storage service
 Package: libakonadi-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, libakonadiprotocolinternals1 (= ${binary:Version}),
- libboost-dev
+Depends: libakonadiprotocolinternals1 (= ${binary:Version}),
+         libboost-dev,
+         ${misc:Depends}
 Suggests: pkg-config
 Description: development files for the Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
@@ -65,8 +73,9 @@ Description: development files for the Akonadi PIM storage service
 Package: akonadi-backend-mysql
 Section: misc
 Architecture: all
-Depends: ${misc:Depends}, mysql-server-core-5.5 | mysql-server-core,
- libqt4-sql-mysql
+Depends: libqt4-sql-mysql,
+         mysql-server-core-5.5 | mysql-server-core,
+         ${misc:Depends}
 Recommends: akonadi-server
 Replaces: akonadi-server (<< 1.3.60~)
 Breaks: akonadi-server (<< 1.3.60~)
@@ -83,7 +92,7 @@ Description: MySQL storage backend for Akonadi
 Package: akonadi-backend-postgresql
 Section: misc
 Architecture: all
-Depends: ${misc:Depends}, libqt4-sql-psql
+Depends: libqt4-sql-psql, ${misc:Depends}
 Recommends: akonadi-server, postgresql
 Replaces: akonadi-server (<< 1.3.60~)
 Breaks: akonadi-server (<< 1.3.60~)
@@ -101,7 +110,7 @@ Package: akonadi-backend-sqlite
 Section: misc
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Recommends: akonadi-server
 Description: SQLite storage backend for Akonadi
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
