@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 1.12.0 amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390x sparc
+# SymbolsHelper-Confirmed: 1.13.0 amd64
 libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  _ZN7Akonadi10ImapParser10parseBlockERK10QByteArray@Base 1.5.1
  _ZN7Akonadi10ImapParser11parseNumberERK10QByteArrayRxPbi@Base 1.5.1
@@ -75,6 +75,7 @@ libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  _ZN7Akonadi21NotificationMessageV212setItemPartsERK4QSetI10QByteArrayE@Base 1.10.2
  _ZN7Akonadi21NotificationMessageV212setOperationENS0_9OperationE@Base 1.10.2
  _ZN7Akonadi21NotificationMessageV212setSessionIdERK10QByteArray@Base 1.10.2
+ _ZN7Akonadi21NotificationMessageV213clearEntitiesEv@Base 1.13.0
  _ZN7Akonadi21NotificationMessageV213setAddedFlagsERK4QSetI10QByteArrayE@Base 1.10.2
  _ZN7Akonadi21NotificationMessageV214setRemovedTagsERK4QSetIxE@Base 1.12.0
  _ZN7Akonadi21NotificationMessageV215setRemovedFlagsERK4QSetI10QByteArrayE@Base 1.10.2
@@ -152,6 +153,7 @@ libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  _ZNK7Akonadi21NotificationMessageV24typeEv@Base 1.10.2
  _ZNK7Akonadi21NotificationMessageV24uidsEv@Base 1.10.2
  _ZNK7Akonadi21NotificationMessageV26entityEx@Base 1.10.2
+ _ZNK7Akonadi21NotificationMessageV27isValidEv@Base 1.13.0
  _ZNK7Akonadi21NotificationMessageV28entitiesEv@Base 1.10.2
  _ZNK7Akonadi21NotificationMessageV28resourceEv@Base 1.10.2
  _ZNK7Akonadi21NotificationMessageV28toStringEv@Base 1.10.2
@@ -163,5 +165,7 @@ libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  _ZNK7Akonadi7ImapSet17toImapSequenceSetEv@Base 1.5.1
  _ZNK7Akonadi7ImapSet7isEmptyEv@Base 1.5.1
  _ZNK7Akonadi7ImapSet9intervalsEv@Base 1.5.1
+ _Zls6QDebugRKN7Akonadi21NotificationMessageV26EntityE@Base 1.13.0
+ _Zls6QDebugRKN7Akonadi21NotificationMessageV3E@Base 1.13.0
  _Zls6QDebugRKN7Akonadi7ImapSetE@Base 1.11.0
  _ZlsR6QDebugRKN7Akonadi12ImapIntervalE@Base 1.5.1
