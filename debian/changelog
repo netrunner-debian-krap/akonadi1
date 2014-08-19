@@ -3,6 +3,7 @@ akonadi (1.13.0-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Remove upstream patches.
   * Update symbols file.
+  * Add missing breaks for kdepim-runtime << 4:4.13. (Closes: #749776)
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 18 Aug 2014 18:30:42 +0200
 

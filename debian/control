@@ -47,7 +47,7 @@ Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: akonadi-server (= ${binary:Version})
 Replaces: libakonadiprivate1 (<< 1.4.90)
-Breaks: libakonadiprivate1 (<< 1.4.90)
+Breaks: libakonadiprivate1 (<< 1.4.90), kdepim-runtime (<< 4:4.13)
 Description: libraries for the Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
  storage service. It provides a common framework for applications to store and
