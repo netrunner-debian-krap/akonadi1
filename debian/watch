@@ -1,2 +1,2 @@
 version=3
-http://download.kde.org/stable/([\d.]+)/src/akonadi-([\d.]+).tar.xz
+http://download.kde.org/stable/akonadi/src/akonadi-([\d.]+).tar.xz
