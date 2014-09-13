@@ -1,5 +1,8 @@
 akonadi (1.13.0-2) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Bump the priority of all the binaries, except akonadi-dbg, to optional
+    (as other packages depend on them).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Sep 2014 14:39:41 +0200
 

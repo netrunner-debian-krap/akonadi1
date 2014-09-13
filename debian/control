@@ -1,6 +1,6 @@
 Source: akonadi
 Section: libs
-Priority: extra
+Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Sune Vuorela <debian@pusling.com>,
            Modestas Vainius <modax@debian.org>,
@@ -127,6 +127,7 @@ Description: SQLite storage backend for Akonadi
 
 Package: akonadi-dbg
 Section: debug
+Priority: extra
 Architecture: any
 Depends: ${misc:Depends}
 Suggests: akonadi-server (= ${binary:Version})
