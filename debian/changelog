@@ -4,6 +4,13 @@ akonadi (1.13.0-2) UNRELEASED; urgency=medium
   * Bump the priority of all the binaries, except akonadi-dbg, to optional
     (as other packages depend on them).
 
+  [ Maximiliano Curia ]
+  * New upstream patch: upstream-fix_typo_in_if_condition
+  * New upstream patch: upstream-
+    fix_buffer_overflow_in_AKTEST_FAKESERVER_MAIN
+  * New upstream patch: upstream-
+    do_not_crash_when_setmntent_returns_NULL
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Sep 2014 14:39:41 +0200
 
 akonadi (1.13.0-1) unstable; urgency=medium
