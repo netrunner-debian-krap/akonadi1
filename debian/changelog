@@ -10,6 +10,7 @@ akonadi (1.13.0-2) UNRELEASED; urgency=medium
     fix_buffer_overflow_in_AKTEST_FAKESERVER_MAIN
   * New upstream patch: upstream-
     do_not_crash_when_setmntent_returns_NULL
+  * Update symbols files from buildds logs (1.13.0-1).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Sep 2014 14:39:41 +0200
 
