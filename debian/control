@@ -60,6 +60,7 @@ Section: libdevel
 Architecture: any
 Depends: libakonadiprotocolinternals1 (= ${binary:Version}),
          libboost-dev,
+         libqt4-dev (>= 4:4.8.0),
          ${misc:Depends}
 Suggests: pkg-config
 Description: development files for the Akonadi PIM storage service
