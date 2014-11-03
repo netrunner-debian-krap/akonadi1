@@ -1,7 +1,7 @@
 Source: akonadi
 Section: libs
 Priority: optional
-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Sune Vuorela <debian@pusling.com>,
            Modestas Vainius <modax@debian.org>,
            Fathi Boudra <fabo@debian.org>,
@@ -9,6 +9,7 @@ Uploaders: Sune Vuorela <debian@pusling.com>,
 Build-Depends: automoc,
                cmake (>= 2.8.8),
                debhelper (>= 9),
+               dh-apparmor,
                libboost-program-options-dev,
                libdbus-1-dev,
                libmysqlclient-dev,
@@ -16,7 +17,6 @@ Build-Depends: automoc,
                libsoprano-dev (>= 2.7.56),
                libsqlite3-dev (>= 3.6.23),
                libxslt-dev,
-               mysql-server-core,
                pkg-kde-tools (>= 0.12),
                shared-mime-info (>= 0.20),
                xsltproc
@@ -47,7 +47,7 @@ Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: akonadi-server (= ${binary:Version})
 Replaces: libakonadiprivate1 (<< 1.4.90)
-Breaks: libakonadiprivate1 (<< 1.4.90), kdepim-runtime (<< 4:4.13)
+Breaks: kdepim-runtime (<< 4:4.13), libakonadiprivate1 (<< 1.4.90)
 Description: libraries for the Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
  storage service. It provides a common framework for applications to store and
@@ -75,7 +75,8 @@ Package: akonadi-backend-mysql
 Section: misc
 Architecture: all
 Depends: libqt4-sql-mysql,
-         mysql-server-core-5.5 | mysql-server-core,
+         mysql-client-core-5.5 | mariadb-client-core-5.5 | mysql-client-core-5.6,
+         mysql-server-core-5.5 | mariadb-server-core-5.5 | mysql-server-core-5.6,
          ${misc:Depends}
 Recommends: akonadi-server
 Replaces: akonadi-server (<< 1.3.60~)

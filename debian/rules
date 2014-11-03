@@ -10,9 +10,13 @@ include /usr/share/pkg-kde-tools/qt-kde-team/2/library-packages.mk
 backend_packages = $(filter akonadi-backend-%,$(shell dh_listpackages))
 
 override_dh_auto_configure:
-	$(overridden_command) -- -DMYSQLD_EXECUTABLE:STRING=/usr/sbin/mysqld \
+	$(overridden_command) -- -DMYSQLD_EXECUTABLE:STRING=/usr/sbin/mysqld-akonadi \
 	    -DINSTALL_QSQLITE_IN_QT_PREFIX=ON \
 	    -DCONFIG_INSTALL_DIR=/etc
+
+-override_dh_installinit:
+	$(overridden_command)
+	dh_apparmor -pakonadi-backend-mysql --profile-name=usr.sbin.mysqld-akonadi
 
 override_dh_installdocs:
 	# Install README.Debian to backend packages

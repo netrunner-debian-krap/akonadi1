@@ -1,3 +1,16 @@
+akonadi (1.13.0-2ubuntu1) vivid; urgency=medium
+
+  * Merge from Debian unstable.  Remaining changes:
+    - Add a mysqld-akonadi wrapper script.
+    - Add apparmor profile for mysqld-akonadi (usr.sbin.mysqld-akonadi).
+    - Make akonadi-backend-mysql depend on mysql-server-core-5.5 and
+      mysql-client-core-5.5 or *5.6 instead of mysql-server-core.
+    - Force dependency on akonadi-backend-mysql for akonadi-server.
+    - Keep debian/libakonadiprotocolinternals1.symbols from Ubuntu
+    - Add Kubuntu to the maintainers as we are moving to debian git.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 31 Oct 2014 14:50:27 +0000
+
 akonadi (1.13.0-2) unstable; urgency=medium
 
   [ Pino Toscano ]
@@ -25,6 +38,40 @@ akonadi (1.13.0-1) unstable; urgency=medium
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 19 Aug 2014 21:01:28 +0200
 
+akonadi (1.12.91-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release needed for KDE 4.13.90 beta 2
+  * Remove patches applied upstream.
+  * Update symbols with batchpatch.
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Fri, 18 Jul 2014 15:38:49 -0700
+
+akonadi (1.12.1-1ubuntu3) utopic; urgency=medium
+
+  * Allow using mysql 5.6 as DB for akonadi-backend-mysql (LP: #1330180)
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Wed, 18 Jun 2014 14:14:01 +0200
+
+akonadi (1.12.1-1ubuntu2) utopic; urgency=medium
+
+  * Add upstream_1.12.1-invalid-gid.diff from upstream to fix broken upgrade
+   - LP: #1318718
+   - https://bugs.kde.org/331867
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 12 May 2014 16:37:03 +0100
+
+akonadi (1.12.1-1ubuntu1) utopic; urgency=low
+
+  * Merge from Debian unstable.  Remaining changes:
+    - Add a mysqld-akonadi wrapper script.
+    - Add apparmor profile for mysqld-akonadi (usr.sbin.mysqld-akonadi).
+    - Make akonadi-backend-mysql depend on mysql-server-core-5.5 and
+      mysql-client-core-5.5 instead of mysql-server-core.
+    - Force dependency on akonadi-backend-mysql for akonadi-server.
+    - Keep debian/libakonadiprotocolinternals1.symbols from Ubuntu
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 08 May 2014 15:08:19 +0200
+
 akonadi (1.12.1-1) unstable; urgency=medium
 
   * New upstream release.
@@ -38,6 +85,18 @@ akonadi (1.12.1-1) unstable; urgency=medium
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 06 May 2014 17:19:48 +0200
 
+akonadi (1.12.1-0ubuntu2) utopic; urgency=high
+
+  * No change rebuild against boost1.55.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Sat, 26 Apr 2014 23:20:45 +0100
+
+akonadi (1.12.1-0ubuntu1) trusty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Harald Sitter <apachelogger@kubuntu.org>  Tue, 08 Apr 2014 10:30:38 +0200
+
 akonadi (1.12.0-1) experimental; urgency=medium
 
   * New upstream release.
@@ -50,6 +109,40 @@ akonadi (1.12.0-1) experimental; urgency=medium
   * Update symbols.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 01 Apr 2014 15:37:32 +0200
+
+akonadi (1.12.0-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 28 Mar 2014 21:40:59 +0000
+
+akonadi (1.11.90-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release (LP: #1296707)
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Mon, 24 Mar 2014 06:01:57 -0700
+
+akonadi (1.11.80-0ubuntu3) trusty; urgency=medium
+
+  * Support mariadb as alternate database for the mysql backend as it is
+    also supported upstream said on IRC.
+    LP: #1289840
+
+ -- Harald Sitter <apachelogger@kubuntu.org>  Mon, 10 Mar 2014 23:09:34 +0100
+
+akonadi (1.11.80-0ubuntu2) trusty; urgency=medium
+
+  * Install missing files
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 10 Mar 2014 11:31:06 +0000
+
+akonadi (1.11.80-0ubuntu1) trusty; urgency=medium
+
+  * New upstream alpha release
+  * Replace disable_dbus_requiring_tests.diff with starting dbus
+    in debian/rules
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 05 Mar 2014 15:09:30 +0000
 
 akonadi (1.11.0-1) unstable; urgency=low
 
@@ -65,12 +158,39 @@ akonadi (1.11.0-1) unstable; urgency=low
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 08 Jan 2014 15:40:35 -0300
 
+akonadi (1.11.0-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release 
+  * Add new symbol to libakonadiprotocolinternals1.symbols
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 24 Dec 2013 11:07:42 +0100
+
+akonadi (1.10.80-0ubuntu1) trusty; urgency=low
+
+  * New upstream release
+   - Update install files
+   - Update disable_dbus_requiring_tests.diff
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Mon, 11 Nov 2013 17:38:58 +0100
+
 akonadi (1.10.3-1) unstable; urgency=medium
 
   * New upstream release. (Closes: #729615, #716922)
   * Update build dependencies.
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 20 Nov 2013 14:53:11 +0100
+
+akonadi (1.10.3-0ubuntu2) trusty; urgency=low
+
+  * No change rebuild for Boost 1.54 transition.
+
+ -- Dmitrijs Ledkovs <xnox@ubuntu.com>  Mon, 21 Oct 2013 13:54:07 +0100
+
+akonadi (1.10.3-0ubuntu1) saucy; urgency=low
+
+  * New upstream bug fix release (LP: #1236394)
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Mon, 07 Oct 2013 16:39:34 +0200
 
 akonadi (1.10.2-2) unstable; urgency=low
 
@@ -87,6 +207,39 @@ akonadi (1.10.2-1) experimental; urgency=low
   * Add empty dir in -dev package, to make AkonadiConfig.cmake happy.
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 30 Aug 2013 12:42:10 +0200
+
+akonadi (1.10.2-0ubuntu2) saucy; urgency=low
+
+  * Set INSTALL_QSQLITE_IN_QT_PREFIX=TRUE so the sqlite3 driver is installed
+    in a place where qt4 can find it (LP: #1218820)
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Wed, 18 Sep 2013 22:54:09 +0200
+
+akonadi (1.10.2-0ubuntu1) saucy; urgency=low
+
+  * New upstream bugfix release (LP: #1218847)
+
+ -- Howard Chan <smartboyhw@gmail.com>  Fri, 30 Aug 2013 19:18:01 +0800
+
+akonadi (1.10.1-0ubuntu1) saucy; urgency=low
+
+  * New upstream release 
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 23 Jul 2013 19:16:46 +0200
+
+akonadi (1.9.80-0ubuntu1) saucy; urgency=low
+
+  [ Rohan Garg ]
+  * New upstream release
+    - Update symbols
+    - Install asapcat with akonadi-server for now
+    - Install notificationmessagev2_p.h with -dev package
+    - Refresh disable_dbus_requiring_tests.diff
+
+  [ Philip Muškovac ]
+  * libkonadi-dev needs to depend on akonadi-server for the dbus service 
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 13 Jun 2013 08:46:15 +0100
 
 akonadi (1.9.2-2) unstable; urgency=low
 
@@ -108,6 +261,17 @@ akonadi (1.9.2-1) unstable; urgency=low
 
  -- Maximiliano Curia <maxy@debian.org>  Sat, 11 May 2013 00:57:28 +0200
 
+akonadi (1.9.1-2ubuntu1) saucy; urgency=low
+
+  * Merge with debian experimental, remaining changes: 
+    - Add a mysqld-akonadi wrapper script.
+    - Add apparmor profile for mysqld-akonadi (usr.sbin.mysqld-akonadi).
+    - Make akonadi-backend-mysql depend on mysql-server-core-5.5 and
+      mysql-client-core-5.5 instead of mysql-server-core.
+    - Force dependency on akonadi-backend-mysql for akonadi-server.
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 30 Apr 2013 22:39:32 +0200
+
 akonadi (1.9.1-2) experimental; urgency=low
 
   * Merge in the uploads to unstable.
@@ -128,6 +292,48 @@ akonadi (1.9.1-1) experimental; urgency=low
 
  -- Sune Vuorela <sune@debian.org>  Mon, 25 Mar 2013 17:00:16 +0100
 
+akonadi (1.9.1-0ubuntu2) saucy; urgency=low
+
+  * No change rebuild for Boost 1.53 transition.
+
+ -- Dmitrijs Ledkovs <dmitrij.ledkov@ubuntu.com>  Fri, 26 Apr 2013 19:18:39 +0100
+
+akonadi (1.9.1-0ubuntu1) raring; urgency=low
+
+  * New upstream bugfix release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 04 Apr 2013 22:49:18 +0100
+
+akonadi (1.9.0-0ubuntu1) raring; urgency=low
+
+  * New upstream release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 03 Jan 2013 21:11:34 +0100
+
+akonadi (1.8.80-0ubuntu1) raring; urgency=low
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 16 Nov 2012 15:16:10 +0000
+
+akonadi (1.8.1-0ubuntu1) raring; urgency=low
+
+  * New upstream release
+
+ -- Scott Kitterman <scott@kitterman.com>  Sat, 03 Nov 2012 23:00:43 -0400
+
+akonadi (1.8.0-0ubuntu1) quantal; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 26 Jul 2012 16:04:21 +0100
+
+akonadi (1.7.90-0ubuntu1) quantal; urgency=low
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 09 Jul 2012 12:09:55 +0100
+
 akonadi (1.7.2-3) unstable; urgency=low
 
   * Team upload.
@@ -147,6 +353,17 @@ akonadi (1.7.2-2) unstable; urgency=low
 
  -- Pino Toscano <pino@debian.org>  Wed, 05 Dec 2012 11:07:57 +0100
 
+akonadi (1.7.2-1ubuntu1) quantal; urgency=low
+
+  * Merge with Debian, remaining changes:
+    - Add a mysqld-akonadi wrapper script.
+    - Add apparmor profile for mysqld-akonadi (usr.sbin.mysqld-akonadi).
+    - Make akonadi-backend-mysql depend on mysql-server-core-5.5 and
+      mysql-client-core-5.5 instead of mysql-server-core.
+    - Force dependency on akonadi-backend-mysql for akonadi-server.
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Thu, 24 May 2012 19:27:56 -0400
+
 akonadi (1.7.2-1) unstable; urgency=low
 
   * New upstream release.
@@ -158,6 +375,32 @@ akonadi (1.7.2-1) unstable; urgency=low
 
  -- Modestas Vainius <modax@debian.org>  Sat, 12 May 2012 23:41:01 +0300
 
+akonadi (1.7.2-0ubuntu2) quantal; urgency=low
+
+  * No change rebuild for boost 1.49 transition
+
+ -- Dmitrijs Ledkovs <dmitrij.ledkov@ubuntu.com>  Thu, 03 May 2012 20:28:00 +0100
+
+akonadi (1.7.2-0ubuntu1) precise; urgency=low
+
+  * New upstream release 
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 10 Apr 2012 21:52:32 +0200
+
+akonadi (1.7.0-0ubuntu3) precise; urgency=low
+
+  * make akonadi-server require the mysql backend. It's the only one really
+    supported upstream and as the default backend has to be installed.
+    (LP: #923189)
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Mon, 09 Apr 2012 18:49:42 +0200
+
+akonadi (1.7.0-0ubuntu2) precise; urgency=low
+
+  * Add build-dep on dh-apparmor (LP: #948481)
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 08 Mar 2012 22:22:17 +0100
+
 akonadi (1.6.2-2) unstable; urgency=low
 
   * Team upload. Upload to unstable.
@@ -166,6 +409,25 @@ akonadi (1.6.2-2) unstable; urgency=low
   * Kill the odbc package. It won't currently work.
 
  -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Mon, 05 Mar 2012 10:09:22 +0100
+
+akonadi (1.7.0-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+  * Remove x11_not_required.diff, file no longer shipped
+  * Disable test suite in debian/rules, it requires dbus
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 24 Jan 2012 23:43:13 +0000
+
+akonadi (1.6.2-1ubuntu1) precise; urgency=low
+
+  * Merge from Debian experimental, remaining changes:
+    - Add a mysqld-akonadi wrapper script.
+    - Add apparmor profile for mysqld-akonadi (usr.sbin.mysqld-akonadi).
+    - Make akonadi-backend-mysql depend on mysql-server-core-5.5 and
+      mysql-client-core-5.5 instead of mysql-server-core.
+    - Bump Breaks/Replaces akonadi-sever version to "<< 1.5.3~".
+
+ -- Felix Geyer <debfx@ubuntu.com>  Sun, 04 Dec 2011 21:06:19 +0100
 
 akonadi (1.6.2-1) experimental; urgency=low
 
@@ -177,6 +439,69 @@ akonadi (1.6.2-1) experimental; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 01 Dec 2011 17:18:06 +0100
 
+akonadi (1.6.2-0ubuntu3) precise; urgency=low
+
+  * Change dependency on client/server to 5.5
+
+ -- Clint Byrum <clint@ubuntu.com>  Sun, 27 Nov 2011 01:49:35 -0800
+
+akonadi (1.6.2-0ubuntu2) precise; urgency=low
+
+  * Rebuild for libmysqlclient transition
+
+ -- Clint Byrum <clint@ubuntu.com>  Wed, 23 Nov 2011 23:49:27 -0800
+
+akonadi (1.6.2-0ubuntu1) oneiric; urgency=low
+
+  * New upstream bugfix release
+
+ -- Scott Kitterman <scott@kitterman.com>  Tue, 04 Oct 2011 16:43:57 -0500
+
+akonadi (1.6.1+git110927-0ubuntu1) oneiric; urgency=low
+
+  * Update to 1.6 branch snapshot for additional bug fixes
+
+ -- Scott Kitterman <scott@kitterman.com>  Fri, 30 Sep 2011 06:45:45 -0400
+
+akonadi (1.6.1-0ubuntu1) oneiric; urgency=low
+
+  * New upstream bug fix release (LP: #707878)
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 16 Sep 2011 16:09:18 +0200
+
+akonadi (1.6.0-0ubuntu2) oneiric; urgency=low
+
+  * No change rebuild due to multi-arch changes in qt4-x11
+
+ -- Scott Kitterman <scott@kitterman.com>  Thu, 18 Aug 2011 10:38:30 -0400
+
+akonadi (1.6.0-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release 
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sat, 16 Jul 2011 16:41:20 +0200
+
+akonadi (1.5.80-0ubuntu1) oneiric; urgency=low
+
+  * New upstrem beta release 
+    - bump debhelper version to fix lintian warning
+    - refresh libakonadiprotocolinternals1.symbols
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 07 Jul 2011 22:25:38 +0200
+
+akonadi (1.5.3-2ubuntu1) oneiric; urgency=low
+
+  * Change Vcs-* from kubuntu-members to kubuntu-packagers
+  * Merge from debian unstable.  Remaining changes:
+    - Use versioned boost build-depends
+    - Add a mysqld-akonadi wrapper script
+    - Add apparmor profile for mysqld-akonadi (usr.sbin.mysqld-akonadi)
+    - Make akonadi-backend-mysql depend on mysql-server-core-5.1 and
+      mysql-client-core-5.1 instead of mysql-server-core
+    - Bump Breaks/Replaces akonadi-sever version to "<< 1.5.3~"
+
+ -- Scott Kitterman <scott@kitterman.com>  Fri, 27 May 2011 23:06:47 -0400
+
 akonadi (1.5.3-2) unstable; urgency=low
 
   [ Pino Toscano ]
@@ -184,11 +509,30 @@ akonadi (1.5.3-2) unstable; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 May 2011 00:22:36 +0300
 
+akonadi (1.5.3-1ubuntu1) oneiric; urgency=low
+
+  * Merge from Debian experimental, remaining changes:
+    - Use versioned boost build-depends.
+    - Add a mysqld-akonadi wrapper script.
+    - Add apparmor profile for mysqld-akonadi (usr.sbin.mysqld-akonadi).
+    - Make akonadi-backend-mysql depend on mysql-server-core-5.1 and
+      mysql-client-core-5.1 instead of mysql-server-core.
+    - Bump Breaks/Replaces akonadi-sever version to "<< 1.5.3~".
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Tue, 24 May 2011 21:04:40 +0200
+
 akonadi (1.5.3-1) experimental; urgency=low
 
   * New upstream release.
 
  -- Modestas Vainius <modax@debian.org>  Mon, 09 May 2011 00:50:11 +0300
+
+akonadi (1.5.2-0ubuntu1) natty; urgency=low
+
+  * New upstream release.
+    - Fixes warnings about duplicated agent identifiers. (LP: #740488)
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Tue, 05 Apr 2011 17:29:48 +0200
 
 akonadi (1.5.1-2) experimental; urgency=low
 
@@ -258,6 +602,117 @@ akonadi (1.5.1-1) experimental; urgency=low
 
  -- Modestas Vainius <modax@debian.org>  Sun, 13 Mar 2011 22:25:05 +0200
 
+akonadi (1.5.1-0ubuntu1) natty; urgency=low
+
+  * New upstream release. (LP: #739424)
+  * Drop 03_disable_usr_lib_install_rpath.diff, fixed upstream.
+  * Call dh_apparmor instead of providing our own postinst/postrm scripts to
+    reload the AppArmor profile.
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Tue, 22 Mar 2011 18:40:35 +0100
+
+akonadi (1.5.0-0ubuntu2) natty; urgency=low
+
+  * Use a wrapper script instead of copying mysqld to mysqld-akonadi.
+    (LP: #728584)
+    - Update the AppArmor profile accordingly.
+    - Drop mysql-server-core-5.1 from build-deps.
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Thu, 03 Mar 2011 18:06:42 +0100
+
+akonadi (1.5.0-0ubuntu1) natty; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 24 Jan 2011 09:48:32 +0000
+
+akonadi (1.4.95-0ubuntu1) natty; urgency=low
+
+  * New upstream release
+    - Fix install files
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sun, 09 Jan 2011 16:19:52 +0530
+
+akonadi (1.4.90-0ubuntu1) natty; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 21 Dec 2010 13:57:05 +0000
+
+akonadi (1.4.80-0ubuntu2) natty; urgency=low
+
+  * Give up on akonadi-agent-launcher and akonadi-agent-server binaries as a
+    bad idea
+    - Remove debian/akonadi-agent-launcher.install and
+      debian/akonadi-agent-server.install
+    - Move files to akonadi-server.install
+    - Remove binaries from debian/control
+
+ -- Scott Kitterman <scott@kitterman.com>  Tue, 23 Nov 2010 10:10:30 -0500
+
+akonadi (1.4.80-0ubuntu1) natty; urgency=low
+
+  * New upstream release to support KDE 4.6 beta 1 packaging
+    - Add new binary packages for usr/bin/akonadi_agent_server and
+      usr/bin/akonadi_agent_launcher
+    - Add org.freedesktop.Akonadi.NotificationSource.xml to
+      libakonadi-dev.install
+    - Refresh patches
+    - Update debian/copyright
+  * Rename libakonadiprivate1 to libakonadiprotocolinternals1 since the
+    private library has been removed and only protocolinternals remains
+    - Update debian/control
+    - Rename install file and drop remove shared objects
+  * Drop implicit-it=thumb workaround as it will no longer be needed once
+    armel is fixed
+
+ -- Scott Kitterman <scott@kitterman.com>  Mon, 22 Nov 2010 09:32:48 -0500
+
+akonadi (1.4.1-0ubuntu2) natty; urgency=low
+
+  * Add CXXFLAGS += -Wa,-mimplicit-it=thumb on armel to fix FTBFS
+
+ -- Scott Kitterman <scott@kitterman.com>  Mon, 01 Nov 2010 12:14:01 -0400
+
+akonadi (1.4.1-0ubuntu1) natty; urgency=low
+
+  * New upstream release
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Fri, 22 Oct 2010 19:14:31 +0200
+
+akonadi (1.4.0-0ubuntu1) maverick; urgency=low
+
+  * New upstream release.
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Sun, 01 Aug 2010 12:29:08 +0200
+
+akonadi (1.3.90-0ubuntu1) maverick; urgency=low
+
+  * New upstream release
+    - Bump debhelper to 7.3.16 or greater
+    - Drop quilt from build-depends no longer need with source
+      format 3.0 (quilt)
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Tue, 06 Jul 2010 02:34:57 +0200
+
+akonadi (1.3.85-0ubuntu1) maverick; urgency=low
+
+  * New upstream release
+    - Update akonadi-server.install
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Sat, 05 Jun 2010 17:13:53 +0200
+
+akonadi (1.3.80-0ubuntu1) maverick; urgency=low
+
+  * New upstream release
+    - Bump libqt4-dev and libsoprano-dev
+    - Drop kubuntu_01_fix_init.diff no longer need
+    - Update 03_disable_usr_lib_install_rpath.diff
+    - Update akonadi-server.install
+  * Switch to dpkg-source 3.0 (quilt) format
+ 
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Wed, 26 May 2010 19:44:52 +0200
+
 akonadi (1.3.1-4) unstable; urgency=low
 
   * Add patch 04_socket_location.diff to allow akonadi-server to run when HOME
@@ -273,6 +728,22 @@ akonadi (1.3.1-3+squeeze1) stable-proposed-updates; urgency=low
     Burchardt for the patch.
 
  -- Modestas Vainius <modax@debian.org>  Sat, 30 Apr 2011 12:50:31 +0300
+
+akonadi (1.3.1-3ubuntu1) maverick; urgency=low
+
+  * Merge with Debian Unstable, remaining changes:
+    - Build-depend on mysql-server-core-5.1
+    - Use versioned boost build-depends
+    - Copy mysqld to mysqld-akonadi (rules)
+    - Make akonadi-server depend on mysql-server-core-5.1 rather than mysql-server
+    - Add apparmor profile for mysqld-akonadi (usr.sbin.mysqld-akonadi)
+    - Add pre and postinst scripts for akonadi-server
+    - Keep kubuntu_01_fix_init.diff
+    - Don't apply 02_hardcode_debian_mysqld_path.diff, we set it in our
+      debian/rules file
+  * Update KUBUNTU-DEBIAN-DIFFERENCES
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Mon, 17 May 2010 23:40:04 -0400
 
 akonadi (1.3.1-3) unstable; urgency=low
 
@@ -322,12 +793,147 @@ akonadi (1.3.1-1) unstable; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 30 Jan 2010 22:09:48 -0300
 
+akonadi (1.3.1-0ubuntu3) lucid; urgency=low
+
+  * Set VCS fields to Bazaar branches
+  * Sync kubuntu_01_fix_init.diff with upstream SVN as per KDE bug 185395.
+    + akonadi-server depends on mysql-server-core-5.1 (>= 5.1.41-3ubuntu11)
+    + akonadi-server depends on mysql-client-core-5.1 (>= 5.1.41-3ubuntu12)
+  * Expand apparmor profile to silence apparmor complaints in syslog,
+    additonally this seems to fix LP: #554514
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Mon, 12 Apr 2010 17:13:38 +0200
+
+akonadi (1.3.1-0ubuntu2) lucid; urgency=low
+
+  * Add kubuntu_01_fix_init.diff in a mere attemt to fix akonadi startup. This
+    depends on a fixed verison of mysql (5.1.41-3ubuntu10) (LP: #448705)
+    + Unlike upstream this uses the --force cmdl argument to also work without
+      resolveip, an executable that is currently shipped in the main server
+      package.
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Wed, 31 Mar 2010 22:08:13 +0200
+
+akonadi (1.3.1-0ubuntu1) lucid; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 09 Feb 2010 21:11:37 +0000
+
+akonadi (1.3.0-0ubuntu1) lucid; urgency=low
+
+  * New upstream release
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Wed, 20 Jan 2010 10:27:54 +0100
+
+akonadi (1.2.80-0ubuntu1) lucid; urgency=low
+
+  * New upstream release
+    - Refresh 01_x11_not_required.diff
+    - Refresh 02_hardcode_debian_notmysqld_path.diff
+    - Remove kubuntu_01_imap_line_endings.diff fixed by upstream
+    - Update libakonadi-dev.install
+    - Bump libboost to 1.40
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Wed, 02 Dec 2009 03:12:37 +0100
+
+akonadi (1.2.1-1ubuntu3) lucid; urgency=low
+
+  * Add missing epoch to Qt build-depends version
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 25 Nov 2009 13:46:57 +0000
+
+akonadi (1.2.1-1ubuntu2) lucid; urgency=low
+
+  * Rebuild against Qt 4.6 rc 1, which is binary incompatible with 4.6
+    beta
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 24 Nov 2009 08:59:50 +0000
+
+akonadi (1.2.1-1ubuntu1) lucid; urgency=low
+
+  * Merge with Debian testing, remaining changes:
+    - Build-depend on mysql-server-core-5.1
+    - Copy mysqld to mysqld-akonadi (rules)
+    - Make akonadi-server depend on mysql-server-core-5.1 rather than mysql-server
+    - Add apparmor profile for mysqld-akonadi (usr.sbin.mysqld-akonadi)
+    - Add pre and postinst scripts for akonadi-server
+    - Keep kubuntu_01_imap_line_endings.diff
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Sat, 07 Nov 2009 17:52:46 -0500
+
 akonadi (1.2.1-1) unstable; urgency=low
 
   * New upstream release.
   * Bump Standards-Version to 3.8.3 (no changes needed).
 
  -- Fathi Boudra <fabo@debian.org>  Sat, 29 Aug 2009 12:00:51 +0200
+
+akonadi (1.2.1-0ubuntu4) karmic; urgency=low
+
+  * Revert previous upload (LP: #418342). Apparently Akonadi
+    does not like being used with MySQL 5.0. This is probably
+    because both Qt and Akonadi are built against 5.1, and the 
+    5.1 libraries are apparently unable to access a 5.0 server
+    part. (LP: #459741)
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Mon, 26 Oct 2009 11:11:44 +0100
+
+akonadi (1.2.1-0ubuntu3) karmic; urgency=low
+
+  * Don't depend on mysql-server-core-5.1 but mysql-server-core
+    which is provided by both 5.0 and 5.1 (LP: #418342)
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 22 Oct 2009 21:10:28 +0200
+
+akonadi (1.2.1-0ubuntu2) karmic; urgency=low
+
+  * Add kubuntu_01_imap_line_endings.diff from
+    http://websvn.kde.org:80/trunk/kdesupport/akonadi/server/src/handler
+    /fetchhelper.cpp?r1=1032262&r2=1032261&pathrev=1032262 as advised by
+    upstream, 'Follow a literal size with CRLF as specified in the IMAP
+    RFC 3501'
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 08 Oct 2009 15:49:57 +0100
+
+akonadi (1.2.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump Standards-Version to 3.8.3 (no changes needed).
+
+ -- Fathi Boudra <fabo@debian.org>  Sat, 29 Aug 2009 12:00:51 +0200
+
+akonadi (1.2.1-0ubuntu1) karmic; urgency=low
+
+  * New upstream release
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Fri, 28 Aug 2009 18:43:17 +0200
+
+akonadi (1.2.0-2ubuntu3) karmic; urgency=low
+
+  * Make akonadi-server depend on mysql-server-core-5.1 rather than the whole
+    mysql-server package
+  * Update KUBUNTU-DEBIAN-DIFFERENCES to reflect the above so that this does
+    not happen again in the future
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Thu, 20 Aug 2009 12:29:59 -0400
+
+akonadi (1.2.0-2ubuntu2) karmic; urgency=low
+
+  * Copy rather than hard link mysql
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 20 Aug 2009 01:05:58 +0100
+
+akonadi (1.2.0-2ubuntu1) karmic; urgency=low
+
+  * Merge from Debian Unstable, remaining changes:
+    + Build-depend on mysql-server-core-5.1
+    + Hardlink mysqld to mysqld-akonadi (rules)
+    + Add apparmor profile for mysqld-akonadi (usr.sbin.mysqld-akonadi)
+    + Add pre and postinst scripts for akonadi-server
+  * Transition over to MySQL 5.1, as part of the merge above (LP: #415191)
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Wed, 19 Aug 2009 08:57:48 -0400
 
 akonadi (1.2.0-2) unstable; urgency=low
 
@@ -344,6 +950,16 @@ akonadi (1.2.0-1) unstable; urgency=low
   * New upstream release.
 
  -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Tue, 04 Aug 2009 09:07:49 +0200
+
+akonadi (1.2.0-0ubuntu1) karmic; urgency=low
+
+  * New upstream release:
+    - bump akonadi version in debian/rules
+    - bump pkg-kde-tools to 0.4.6
+    - bump libsoprano-dev to 2.3.0
+    - bump cdbs to 0.4.56
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Wed, 29 Jul 2009 19:52:18 +0200
 
 akonadi (1.1.95-2) experimental; urgency=low
 
@@ -369,6 +985,40 @@ akonadi (1.1.95-1) experimental; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 26 Jun 2009 19:25:36 +0300
 
+akonadi (1.1.95-0ubuntu1) karmic; urgency=low
+
+  * New upstream release
+    - bump akonadi version in debian/rules
+    - bump libboost-program-options1.35-dev to libboost-program-options1.38-dev
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Wed, 24 Jun 2009 05:14:31 +0200
+
+akonadi (1.1.90-0ubuntu1) karmic; urgency=low
+
+  * New upstream release:
+    - bump akonadi versino in debian/rules
+    - update libakonadi-dev.install
+    - refresh 02_hardcode_debian_mysqld_path.diff
+
+ -- Steve Stalcup <vorian@ubuntu.com>  Thu, 04 Jun 2009 09:47:55 -0400
+
+akonadi (1.1.85-0ubuntu1) karmic; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 13 May 2009 09:45:47 +0000
+
+akonadi (1.1.2-1ubuntu1) karmic; urgency=low
+
+  * Merge from Debian unstable, remaining changes: (LP: #372700)
+    + Add mysql-server-5.0 as build dependency
+    + Add mysql-server-5.0 as dependency for akonadi-server
+    + Hardlink mysqld to mysqld-akonadi (rules)
+    + Add apparmor profile for mysqld-akonadi (usr.sbin.mysqld-akonadi)
+    + Add pre and postinst scripts for akonadi-server 
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Wed, 06 May 2009 09:09:00 -0400
+
 akonadi (1.1.2-1) unstable; urgency=low
 
   * New upstream release.
@@ -383,6 +1033,24 @@ akonadi (1.1.2-1) unstable; urgency=low
   * Update akonadi-dbg package section: debug.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 01 May 2009 14:00:31 +0200
+
+akonadi (1.1.1-2ubuntu2) karmic; urgency=low
+
+  * Add missing comma to build-depends, fixes FTBFS
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Tue, 28 Apr 2009 13:21:15 -0400
+
+akonadi (1.1.1-2ubuntu1) karmic; urgency=low
+
+  * Merge from Debian unstable, remaining changes: (LP: #367109)
+    + Add mysql-server-5.0 as build dependency
+    + Add mysql-server-5.0 as dependency for akonadi-server
+    + Hardlink mysqld to mysqld-akonadi (rules)
+    + Add apparmor profile for mysqld-akonadi (usr.sbin.mysqld-akonadi)
+    + Add pre and postinst scripts for akonadi-server
+  * Update KUBUNTU-DEBAIN-DIFFERENCES
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Sat, 25 Apr 2009 22:25:00 -0400
 
 akonadi (1.1.1-2) unstable; urgency=low
 
@@ -422,6 +1090,103 @@ akonadi (1.1.1-1) experimental; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 24 Jan 2009 13:37:05 +0100
 
+akonadi (1.1.1-0ubuntu3) jaunty; urgency=low
+
+  * Change build-deps to boost 1.35, LP: #297152
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 29 Jan 2009 12:13:53 +0000
+
+akonadi (1.1.1-1) experimental; urgency=low
+
+  * New upstream release.
+
+  +++ Changes by Modestas Vainius:
+
+  * Bump Standards-Version to 3.8.0: add README.source.
+  * Build depend on libboost-program-options-dev.
+  * Bump cmake build depend to 2.6.2.
+  * Switch to new installgen format.
+  * Update install files.
+  * Bump shlibs.
+  * Make akonadi-server depend on libqt4-sql-mysql.
+  * Add 02_hardcode_debian_mysqld_path.diff patch to hardcode MySQLd
+    path instread of depending on mysql-server at build time.
+  * Bump debian/compat and debhelper build dependency to v7 (to get more
+    sophisticated debian/tmp handling).
+
+  +++ Changes by Ana Beatriz Guerrero Lopez:
+
+  * Remove no longer needed lintian override.
+  * Updating packaging copyright years.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 24 Jan 2009 13:37:05 +0100
+
+akonadi (1.1.1-0ubuntu2) jaunty; urgency=low
+
+  * akonadi-server depends on mysql-server-core-5.0 not
+    mysql-server-5.0, full server not needed
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 22 Jan 2009 10:48:22 +0000
+
+akonadi (1.1.1-0ubuntu1) jaunty; urgency=low
+
+  * New upstream release
+  * Changed build-dep on mysql-server-5.0 to mysql-server-core-5.0
+
+ -- Steve Stalcup <vorian@ubuntu.com>  Wed, 21 Jan 2009 14:03:55 -0500
+
+akonadi (1.1.0-0ubuntu1) jaunty; urgency=low
+
+  * New upstream release
+  * Add libboost-program-options-dev as build dependency (libboost-dev doesn't
+    depend on it any longer)
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Sat, 03 Jan 2009 17:45:48 +0100
+
+akonadi (1.0.81-0ubuntu2) jaunty; urgency=low
+
+  * Really change build dependency
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Wed, 17 Dec 2008 16:19:19 +0100
+
+akonadi (1.0.81-0ubuntu1) jaunty; urgency=low
+
+  * New upstream release
+  * Replace kdesdk-scripts build dependency with pkg-kde-tools (files got moved)
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Wed, 17 Dec 2008 14:38:55 +0100
+
+akonadi (1.0.80-0ubuntu1) jaunty; urgency=low
+
+  * New upstream release
+  * Use kde4.mk from cdbs rather than embedded debian/cdbs
+    + Build depend on kdesdk-scripts for kde4.mk
+  * Remove obsolete THIS_SHOULD_GO_TO_UNSTABLE=1 from debian/rules
+  * Add new build dependency on libboost-dev
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Sun, 23 Nov 2008 12:33:35 +0100
+
+akonadi (1.0.0-2ubuntu2) jaunty; urgency=low
+
+  * Remove kubuntu_01_mysqldakonadi.diff,
+    set -DMYSQLD_EXECUTABLE=/usr/sbin/mysqld-akonadi
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 05 Nov 2008 19:57:19 +0000
+
+akonadi (1.0.0-2ubuntu1) jaunty; urgency=low
+
+  * Merge with Debian, remaining changes:
+   - Make akonadi-server depend on libqt4-sql-mysql
+   - Add mysql-server-5.0 as build dependency
+   - Add mysql-server-5.0 as dependency for akonadi-server
+   - Add kubuntu_01_mysqldakonadi.diff ensuring that akonadiserver uses
+     mysqld-akonadi instead of mysqld itself (to bypass apparmor)
+   - Hardlink mysqld to mysqld-akonadi (rules)
+   - Add apparmor profile for mysqld-akonadi (usr.sbin.mysqld-akonadi)
+   - Add pre and postinst scripts for akonadi-server
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 05 Nov 2008 16:35:03 +0000
+
 akonadi (1.0.0-2) unstable; urgency=low
 
   +++ Changes by Ana Beatriz Guerrero Lopez:
@@ -456,6 +1221,66 @@ akonadi (0.82.0-1) unstable; urgency=low
   * Hardcode mysqld path in debian/rules.
 
  -- Sune Vuorela <debian@pusling.com>  Fri, 27 Jun 2008 19:30:34 +0200
+
+akonadi (1.0.0-0ubuntu5) intrepid; urgency=low
+
+  * Reprofile mysqld-akonadi (LP: #280404)
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 09 Oct 2008 16:20:47 +0200
+
+akonadi (1.0.0-0ubuntu4) intrepid; urgency=low
+
+  * Fix duplicated variable in akonadiserver apparmor profile
+    (LP: #271643)
+
+ -- Steve Beattie <sbeattie@ubuntu.com>  Mon, 06 Oct 2008 20:53:43 -0700
+
+akonadi (1.0.0-0ubuntu3) intrepid; urgency=low
+
+  * Apparmor shouldn't hate akonadiserver when it tries to create directories
+    (also add locking permissions in case it's necessary some day)
+  * Make the Apparmor profile also work as root
+  * Add postinst and postrm for akonadi-server, invoking an apparmor reload to
+    get immediate access permissions for the daemon
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Fri, 05 Sep 2008 16:44:44 +0200
+
+akonadi (1.0.0-0ubuntu2) intrepid; urgency=low
+
+  * Add akonadi-server dependency on libqt4-sql-mysql
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Tue, 19 Aug 2008 00:05:05 +0200
+
+akonadi (1.0.0-0ubuntu1) intrepid; urgency=low
+
+  * New upstream release
+  * libakonadiprivate0 -> libakonadiprivate1
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 24 Jul 2008 02:21:18 +0200
+
+akonadi (0.82.0-0ubuntu3) intrepid; urgency=low
+
+  * libakonadiprivate0 suggests not recommends akonadi-server
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 18 Jul 2008 09:31:54 +0100
+
+akonadi (0.82.0-0ubuntu2) intrepid; urgency=low
+
+  * Add mysql-server-5.0 as build dependency
+  * Add mysql-server-5.0 as dependency for akonadi-server
+  * Add kubuntu_01_mysqldakonadi.diff ensuring that akonadiserver uses
+    mysqld-akonadi instead of mysqld itself (to bypass apparmor)
+  * Hardlink mysqld to mysqld-akonadi
+  * Add apparmor profile for mysqld-akonadi
+  * Bump Standards-Version to 3.8.0
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 26 Jun 2008 14:48:49 +0200
+
+akonadi (0.82.0-0ubuntu1) intrepid; urgency=low
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 19 Jun 2008 14:03:43 +0000
 
 akonadi (0.81.0-1) experimental; urgency=low
 
@@ -525,3 +1350,4 @@ akonadi (0.80.0-1) experimental; urgency=low
   * Add installgen files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 Apr 2008 16:29:05 +0300
+
