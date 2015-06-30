@@ -1,10 +1,10 @@
-akonadi (1.13.0-3) UNRELEASED; urgency=medium
+akonadi (1.13.0-3) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Team upload.
   * Apply upstream_dont_leak_old_external_payload_files.patch which fixes a bug
     that let old files be kept when they should be removed.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 30 Jun 2015 12:00:16 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 30 Jun 2015 12:03:32 -0300
 
 akonadi (1.13.0-2) unstable; urgency=medium
 
