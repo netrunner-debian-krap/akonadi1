@@ -1,3 +1,18 @@
+akonadi (1.13.0-4) unstable; urgency=medium
+
+  * Team upload.
+  * backend-mysql: depend on MySQL-5.6 or any MySQL flavour (Closes: #746651)
+    Depends:
+    - mysql-server-core-5.5 | mysql-server-core
+    + mysql-server-core-5.6 | virtual-mysql-server-core
+  * Standards-Version: 3.9.6.
+  * xs-testsuite-header-in-debian-control: removed "XS-Testsuite" header.
+  * Updated Vcs-Browser URL.
+  * Patches renamed to consistently end with ".patch".
+  * New patch to add PostgreSQL 9.4 search path (Closes: #791805).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Mon, 13 Jul 2015 23:56:38 +1000
+
 akonadi (1.13.0-3) unstable; urgency=medium
 
   * Team upload.
