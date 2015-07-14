@@ -1,3 +1,4 @@
+postgresql-data-checksums.patch
 postgresql9.4.patch
 upstream-fix_typo_in_if_condition.patch
 upstream-fix_buffer_overflow_in_AKTEST_FAKESERVER_MAIN.patch
