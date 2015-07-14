@@ -16,7 +16,6 @@ Build-Depends: automoc,
                libsoprano-dev (>= 2.7.56),
                libsqlite3-dev (>= 3.6.23),
                libxslt-dev,
-               mysql-server-core,
                pkg-kde-tools (>= 0.12),
                shared-mime-info (>= 0.20),
                xsltproc
