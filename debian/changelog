@@ -1,3 +1,13 @@
+akonadi (1.13.0-6) unstable; urgency=medium
+
+  * Team upload.
+  * New "upstream-MOVEcomplete.patch" (fixes deadlock).
+  * Bunch of optimisation patches from upstream 1.13 branch.
+  * Install "akonadictl.1" man page.
+  * copyright: reviewed, converted to copyright-format-1.0 and updated.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Mon, 20 Jul 2015 03:26:42 +1000
+
 akonadi (1.13.0-5) unstable; urgency=medium
 
   * Team upload.
