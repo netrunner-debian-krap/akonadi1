@@ -8,3 +8,10 @@ upstream-prevent-QTimer-negative-interval.patch
 upstream-use-QAtomicInt.patch
 upstream_dont_call_insert_from_Q_ASSERT.patch
 upstream_dont_leak_old_external_payload_files.patch
+upstream_opt-0001-skip-value-condition-on-invalid-flags.patch
+upstream_opt-0002-intern-entity-strings.patch
+upstream_opt-0003-QMutexLocker.patch
+upstream_opt-0004-one-hash-lookup.patch
+upstream_opt-0005-optimize-queries.patch
+upstream_opt-0006-cache-PartTypes.patch
+upstream_opt-0007-avoid-recursive-listing-in-SearchHelper.patch
