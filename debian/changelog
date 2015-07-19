@@ -1,3 +1,14 @@
+akonadi (1.13.0-5) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream patches:
+    + upstream-use-QAtomicInt.patch
+    + upstream-prevent-QTimer-negative-interval.patch
+  * Initialise PSQL database with "--data-checksums" (Closes: #791807).
+  * Build-Depends: removed "mysql-server-core" (not needed on build time).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 19 Jul 2015 20:31:33 +1000
+
 akonadi (1.13.0-4) unstable; urgency=medium
 
   * Team upload.
