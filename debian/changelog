@@ -1,3 +1,36 @@
+akonadi (1.13.0-2ubuntu5) wily; urgency=medium
+
+  * No change rebuild for boost1.58/libstdc++6.
+
+ -- Dimitri John Ledkov <dimitri.j.ledkov@linux.intel.com>  Sun, 02 Aug 2015 11:57:02 +0100
+
+akonadi (1.13.0-2ubuntu4) vivid; urgency=medium
+
+  * debian/rules: re-enable the override_dh_installinit target, disabled
+    in an earlier merge from debian. This allows dh-apparmor to create
+    the postinst for the akonadi-backend-mysql package, which creates
+    the missing part of that package's apparmor profile at install time
+    (LP: #1440501)
+
+ -- Steve Beattie <sbeattie@ubuntu.com>  Wed, 15 Apr 2015 10:48:33 -0700
+
+akonadi (1.13.0-2ubuntu3) vivid; urgency=medium
+
+  * Still prefer mysql 5.6, but allow any mysql implementation that provides
+    virtual-mysql-server-core and virtual-mysql-client-core
+    (LP: #1336005)
+  * Force dependency on akonadi-backend-mysql for akonadi-server.
+    (was accidentally dropped in the last debian merge)
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Wed, 15 Apr 2015 16:57:20 +0200
+
+akonadi (1.13.0-2ubuntu2) vivid; urgency=medium
+
+  * Allow using mariadb 10.0 as backend for akonadi-backend-mysql
+    (LP: #1441119)
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 09 Apr 2015 18:25:44 +0200
+
 akonadi (1.13.0-2ubuntu1) vivid; urgency=medium
 
   * Merge from Debian unstable.  Remaining changes:
