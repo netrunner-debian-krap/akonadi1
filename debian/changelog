@@ -8,6 +8,8 @@ akonadi1 (1.13.0-8ubuntu1) UNRELEASED; urgency=medium
     + Rip out all runtime packages (-server -backend-*) as we do not support
       actually running the akonadi1 server
     + Break&replace old packages
+    + libakonadi-dev conflicts libkf5akonadiserver-dev as they install the
+      same dbus interfaces and thus must not be installed at the same time
 
  -- Harald Sitter <sitter@kde.org>  Wed, 02 Sep 2015 09:57:37 +0200
 

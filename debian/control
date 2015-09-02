@@ -45,6 +45,7 @@ Depends: libakonadiprotocolinternals1 (= ${binary:Version}),
          libqt4-dev (>= 4:4.8.0),
          ${misc:Depends}
 Suggests: pkg-config
+Conflicts: libkf5akonadiserver-dev
 Description: development files for the Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
  storage service. It provides a common framework for applications to store and
