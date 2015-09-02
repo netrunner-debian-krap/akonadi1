@@ -85,8 +85,8 @@ libakonadiprotocolinternals.so.1 libakonadiprotocolinternals1 #MINVER#
  _ZN7Akonadi21NotificationMessageV219setParentCollectionEx@Base 1.10.2
  _ZN7Akonadi21NotificationMessageV222setDestinationResourceERK10QByteArray@Base 1.10.2
  _ZN7Akonadi21NotificationMessageV223setParentDestCollectionEx@Base 1.10.2
- _ZN7Akonadi21NotificationMessageV26EntityD1Ev@Base 1.10.2
- _ZN7Akonadi21NotificationMessageV26EntityD2Ev@Base 1.10.2
+ (optional=gccinternal|arch=sparc)_ZN7Akonadi21NotificationMessageV26EntityD1Ev@Base 1.13.0
+ (optional=gccinternal|arch=sparc)_ZN7Akonadi21NotificationMessageV26EntityD2Ev@Base 1.13.0
  _ZN7Akonadi21NotificationMessageV27setTypeENS0_4TypeE@Base 1.10.2
  _ZN7Akonadi21NotificationMessageV29addEntityExRK7QStringS3_S3_@Base 1.10.2
  _ZN7Akonadi21NotificationMessageV2C1ERKS0_@Base 1.10.2

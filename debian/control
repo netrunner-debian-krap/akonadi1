@@ -20,10 +20,9 @@ Build-Depends: automoc,
                pkg-kde-tools (>= 0.12),
                shared-mime-info (>= 0.20),
                xsltproc
-Standards-Version: 3.9.5
-XS-Testsuite: autopkgtest
+Standards-Version: 3.9.6
 Homepage: http://pim.kde.org/akonadi
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-req/akonadi.git
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/kde-req/akonadi.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-req/akonadi.git
 
 Package: akonadi-server

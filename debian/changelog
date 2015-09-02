@@ -1,3 +1,62 @@
+akonadi (1.13.0-8) unstable; urgency=medium
+
+  * Team upload.
+  * Update symbols files.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 29 Aug 2015 00:41:28 +0200
+
+akonadi (1.13.0-7) unstable; urgency=medium
+
+  * Team upload.
+  * Removed some patches introduced in previous upload due to regressions
+    causing invalid SQL commands.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Mon, 20 Jul 2015 12:30:32 +1000
+
+akonadi (1.13.0-6) unstable; urgency=medium
+
+  * Team upload.
+  * New "upstream-MOVEcomplete.patch" (fixes deadlock).
+  * Bunch of optimisation patches from upstream 1.13 branch.
+  * Install "akonadictl.1" man page.
+  * copyright: reviewed, converted to copyright-format-1.0 and updated.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Mon, 20 Jul 2015 03:26:42 +1000
+
+akonadi (1.13.0-5) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream patches:
+    + upstream-use-QAtomicInt.patch
+    + upstream-prevent-QTimer-negative-interval.patch
+  * Initialise PSQL database with "--data-checksums" (Closes: #791807).
+  * Build-Depends: removed "mysql-server-core" (not needed on build time).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 19 Jul 2015 20:31:33 +1000
+
+akonadi (1.13.0-4) unstable; urgency=medium
+
+  * Team upload.
+  * backend-mysql: depend on MySQL-5.6 or any MySQL flavour (Closes: #746651)
+    Depends:
+    - mysql-server-core-5.5 | mysql-server-core
+    + mysql-server-core-5.6 | virtual-mysql-server-core
+  * Standards-Version: 3.9.6.
+  * xs-testsuite-header-in-debian-control: removed "XS-Testsuite" header.
+  * Updated Vcs-Browser URL.
+  * Patches renamed to consistently end with ".patch".
+  * New patch to add PostgreSQL 9.4 search path (Closes: #791805).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Mon, 13 Jul 2015 23:56:38 +1000
+
+akonadi (1.13.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * Apply upstream_dont_leak_old_external_payload_files.patch which fixes a bug
+    that let old files be kept when they should be removed.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 30 Jun 2015 12:03:32 -0300
+
 akonadi (1.13.0-2ubuntu5) wily; urgency=medium
 
   * No change rebuild for boost1.58/libstdc++6.
