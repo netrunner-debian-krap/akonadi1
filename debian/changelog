@@ -4,6 +4,9 @@ akonadi1 (1.13.0-8ubuntu1) UNRELEASED; urgency=medium
     + This is now a transitional source to allow kde4pimlibs applications to
       install
     + Merge with debian unstable
+    + Rename all packages to reflect their association with akonadi1
+    + Rip out all runtime packages (-server -backend-*) as we do not support
+      actually running the akonadi1 server
 
  -- Harald Sitter <sitter@kde.org>  Wed, 02 Sep 2015 09:57:37 +0200
 
