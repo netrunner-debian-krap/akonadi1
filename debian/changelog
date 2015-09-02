@@ -1,4 +1,4 @@
-akonadi1 (1.13.0-8ubuntu1) UNRELEASED; urgency=medium
+akonadi1 (1.13.0-8ubuntu1) wily; urgency=medium
 
   * Rename source to akonadi1 from akonadi
     + This is now a transitional source to allow kde4pimlibs applications to
@@ -11,7 +11,7 @@ akonadi1 (1.13.0-8ubuntu1) UNRELEASED; urgency=medium
     + libakonadi-dev conflicts libkf5akonadiserver-dev as they install the
       same dbus interfaces and thus must not be installed at the same time
 
- -- Harald Sitter <sitter@kde.org>  Wed, 02 Sep 2015 09:57:37 +0200
+ -- Harald Sitter <sitter@kde.org>  Wed, 02 Sep 2015 14:37:58 +0200
 
 akonadi (1.13.0-8) unstable; urgency=medium
 
