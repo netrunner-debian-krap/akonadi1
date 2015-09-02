@@ -1,4 +1,4 @@
-Source: akonadi
+Source: akonadi1
 Section: libs
 Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
@@ -22,8 +22,8 @@ Build-Depends: automoc,
                xsltproc
 Standards-Version: 3.9.6
 Homepage: http://pim.kde.org/akonadi
-Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/kde-req/akonadi.git
-Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-req/akonadi.git
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/krap/akonadi1.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/krap/akonadi1.git
 
 Package: akonadi-server
 Section: net
